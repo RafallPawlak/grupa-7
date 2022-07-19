@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://RafallPawlak.github.io/parcel-project-template",
+  "homepage": "http://rafallpawlak.github.io/grupa-7",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /grupa-7/"
