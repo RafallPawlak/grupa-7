@@ -4,6 +4,8 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@import './base/container';
+@import './utils/variables';
 @import './header-hero';
 @import './products';
 @import './about';
