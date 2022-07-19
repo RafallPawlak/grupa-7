@@ -1,3 +1,6 @@
+
+https://rafallpawlak.github.io/grupa-7/
+
 # parcel-project-template
 
 ## Zalezności
