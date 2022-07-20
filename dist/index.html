@@ -8,7 +8,32 @@
   <link rel="stylesheet" href="/src.e31bb0bc.css"></head>
   <body>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
-    header-hero<br>
+    <header class="hero-header">
+    <section class="hero-header__top header-top">
+        <div class="header-top__logo">
+
+        </div>
+        <div class="menu-mobile"></div>
+        <ul class="menu">
+            <li><a class="menuItem" href="#">Home</a></li>
+            <li><a class="menuItem" href="#">Profile</a></li>
+            <li><a class="menuItem" href="#">About</a></li>
+            <li><a class="menuItem" href="#">Contacts</a></li>
+        </ul>
+        <button class="hamburger">
+            <!-- material icons https://material.io/resources/icons/ -->
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+        </button>
+
+    </section>
+    <section class="hero-header__topic">
+
+    </section>
+    <section class="hero-header__buttons">
+
+    </section>
+</header>
     <section>
     <div>
    <h2 class="products-second__heading"> 100% NATURAL</h2>
@@ -80,5 +105,6 @@ customer-reviews <br>
 
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="/src.e31bb0bc.js"></script>
+    <script src="/hamburger.8e317b2c.js"></script>
   </body>
 </html>
