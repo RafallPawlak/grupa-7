@@ -97,7 +97,7 @@ ol {
   transform: rotate(45deg);
 }
 .nav-container.is-active .nav-items {
-  transform: translate(55vw, 0);
+  transform: translate(60vw, 0);
 }
 .nav-container .nav-toggle {
   position: relative;
@@ -113,7 +113,7 @@ ol {
   content: "";
   position: absolute;
   top: 20px;
-  left: -30%;
+  left: -35%;
   transform: translate(0, 0);
   width: 100%;
   height: 2px;
