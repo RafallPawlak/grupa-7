@@ -1,45 +1,100 @@
-.menuItem {
-    display: block;
-    margin: 2rem 4rem;
-    font-size: 1.8rem;
-    color: white;
-    text-decoration: none;
-}
+$toggleSize: 20px;
+$toggleMargin: 10px;
+$toggleLine: 2px;
+$toggleColor: var(--dark-pink);
 
-.menuItem:hover {
-    text-decoration: underline;
-}
+.nav-container {
+    display: inline-block;
+    max-width: $toggleSize + $toggleMargin;
+    max-height: $toggleSize + $toggleMargin;
+    overflow: visible;
+    outline: none;
 
-.hamburger {
-    position: fixed;
-    z-index: 100;
-    top: 1rem;
-    right: 1rem;
-    padding: 4px;
-    border: black solid 1px;
-    background: white;
-    cursor: pointer;
-}
+    //&:focus-within, &:focus {
+    &.is-active {
+        .nav-toggle {
 
-.closeIcon {
-    display: none;
-}
+            &:before,
+            &:after {
+                box-shadow: none;
+            }
 
-.menu {
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background: black;
-    color: white;
-    list-style: none;
-    padding-top: 4rem;
-}
+            &:before {
+                transform: rotate(-45deg);
+            }
 
-.showMenu {
-    transform: translateY(0);
+            &:after {
+                transform: rotate(45deg);
+            }
+        }
+
+        .nav-items {
+            transform: translate(55vw, 0);
+        }
+    }
+
+    .nav-toggle {
+        $offset: $toggleSize * 0.5;
+
+        position: relative;
+        width: $toggleSize;
+        height: $toggleSize;
+        margin: $toggleMargin;
+        z-index: 902;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: -30%;
+            transform: translate(0, 0);
+            width: 100%;
+            height: $toggleLine;
+            background: $toggleColor;
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+
+        &:before {
+            box-shadow: 0 #{$offset / 1.5} 0 0 $toggleColor;
+        }
+
+        &:after {
+            box-shadow: 0 #{-$offset / 1.5} 0 0 $toggleColor;
+        }
+    }
+
+    .nav-items {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 40vw;
+        z-index: 901;
+        padding: 80px 20px 20px 10px;
+        transition: transform .3s ease;
+        transform: translate(calc(100vw), 0);
+        background: #EFEFEF;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px 0;
+        align-content: start;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+
+        .nav-item {
+            background: darken(#EFEFEF, 5%);
+            padding: 10px;
+            transition: background-color .3s ease;
+
+            &:hover {
+                cursor: pointer;
+                background: darken(#EFEFEF, 10%);
+            }
+        }
+    }
 }
