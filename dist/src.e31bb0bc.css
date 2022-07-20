@@ -1,8 +1,22 @@
-@charset "UTF-8";
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
+:root {
+  --main-color: #FFF5F;
+  --product-pink: #FFB8CA;
+  --product-yellow: #F0D1A5;
+  --product-green: #C2E297;
+  --dark-pink: #D41443;
+  --light-pink: #FFA5BA;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
 .container {
   padding: 0px 20px;
   margin: 0 auto;
@@ -25,8 +39,39 @@
   }
 }
 
-:root {
-  --main-color: FFF5F;
+.products-second__heading {
+  text-align: center;
+  font-size: 18px;
+  color: var(--light-pink);
+}
+
+.products-first__heading {
+  text-align: center;
+  font-size: 34px;
+  color: var(--dark-pink);
+}
+
+.product-square__item {
+  width: 280px;
+  height: 485px;
+  border-radius: 24px;
+}
+
+.--product-pink {
+  background-color: var(--product-pink);
+}
+
+.--product-yellow {
+  background-color: var(--product-yellow);
+}
+
+.--product-green {
+  background-color: var(--product-green);
+}
+
+.product__item {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .example {
