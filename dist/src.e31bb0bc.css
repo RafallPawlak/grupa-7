@@ -1,0 +1,149 @@
+:root {
+  --main-color: #FFF5F;
+  --product-pink: #FFB8CA;
+  --product-yellow: #F0D1A5;
+  --product-green: #C2E297;
+  --dark-pink: #D41443;
+  --light-pink: #FFA5BA;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.container {
+  padding: 0px 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
+.menuItem {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.products-second__heading {
+  text-align: center;
+  font-size: 18px;
+  color: var(--light-pink);
+}
+
+.products-first__heading {
+  text-align: center;
+  font-size: 34px;
+  color: var(--dark-pink);
+}
+
+.product-square__item {
+  width: 280px;
+  height: 485px;
+  border-radius: 24px;
+}
+
+.--product-pink {
+  background-color: var(--product-pink);
+}
+
+.--product-yellow {
+  background-color: var(--product-yellow);
+}
+
+.--product-green {
+  background-color: var(--product-green);
+}
+
+.product__item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.example {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #424242;
+  max-width: 960px;
+  padding: 16px;
+}
+
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #009688;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("/demo.3a1bb503.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */
