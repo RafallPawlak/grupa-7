@@ -1,13 +1,18 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
+//Utils
+@import "./utils/variables";
 
-// Style dla pliku z przykładem HTML fragmentu
+//General
+@import "./general/general-styles";
 @import './base/container';
-@import './utils/variables';
+
+//Hero
 @import './header-hero';
-@import './products';
+
+//Products
+@import "./products/_products-heading.scss";
+@import "./products/_products-list.scss";
+
+//About
 @import './about';
 @import './advantages';
 @import './gallery';
