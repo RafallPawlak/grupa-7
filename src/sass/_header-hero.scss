@@ -7,7 +7,7 @@
     width: 100%;
 }
 
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {
     .hero-header {
         display: flex;
         flex-direction: column;
@@ -30,7 +30,7 @@
     padding-top: 6px;
 }
 
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {
     .header-top__logo {
         width: 199px;
         height: 50px;
@@ -45,7 +45,7 @@
     display: none;
 }
 
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {
     .header-top__buy {
         display: inline-block;
         width: 160px;
@@ -65,7 +65,7 @@
     display: none;
 }
 
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {
     .header-top__buylink {
         display: inline-block;
         color: #D41443;
@@ -112,7 +112,7 @@ font-family: 'DM Sans';
     bottom: 110px;
 }
 
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {
     .hero-header__buttons {
         position: relative;
         bottom: 65px;
@@ -170,13 +170,13 @@ font-family: 'DM Sans';
     display: none;
 }
 
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {
 .hero-header__eat{
 position: relative;
 display: flex;
 }}
 
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {
 .header-eat__number{
 font-family: 'Titan One';
     font-style: normal;
@@ -193,12 +193,12 @@ right: 25px;
 width: 35px;
 }}
 
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {
 .--cafes{
     margin-bottom: 50px;
 }}
 
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {
 .header-eat__span{
 font-family: 'DM Sans';
     font-style: normal;
@@ -213,7 +213,7 @@ font-family: 'DM Sans';
     width: 100%;
 }}
 
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {
 .--trucks-span{
         width: 55px;
         text-align: left;
@@ -224,8 +224,8 @@ font-family: 'DM Sans';
     display: none;
 }
 
-@media screen and(min-width: 480px) {}
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {}
+@media screen and(min-width: 767px) {
     .cafe-circle{
         position: absolute;
         top: 0px;
@@ -239,7 +239,7 @@ font-family: 'DM Sans';
     display: none;
 }
 
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {
     .truck-circle {
         position: absolute;
         top: 0px;
@@ -254,21 +254,21 @@ font-family: 'DM Sans';
     background-image: url("/images/elipse-mobile.png");
     background-size: 344px;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 67vw;
     top: 100px;
     left: 30vw;
 }
 
 
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {
     .hero-header__icediv {
         position: absolute;
         background-image: url("/images/elipse-mobile.png");
-        background-size: 344px;
+        background-size: 324px;
         background-repeat: no-repeat;
-        width: 100vw;
+        width: 50vw;
         top: 30px;
-        left: 30vw;
+        left: 40vw;
     }
 }
 
@@ -279,7 +279,7 @@ font-family: 'DM Sans';
     margin-top: -8px;
 }
 
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {
     .header-bottom__icecream {
         width: 143px;
         height: 336px;
@@ -292,7 +292,7 @@ font-family: 'DM Sans';
     display: none;
 }
 
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {
     .hero-header__milkdiv {
         display: inline-block;
         position: absolute;
@@ -306,7 +306,7 @@ font-family: 'DM Sans';
     display: none;
 }
 
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {
     .hero-header__tastydiv {
         display: inline-block;
         position: absolute;

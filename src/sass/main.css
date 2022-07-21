@@ -141,7 +141,7 @@ body {
   cursor: pointer;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .nav-container .nav-items {
     position: absolute;
     overflow: hidden;
@@ -168,8 +168,12 @@ body {
     cursor: pointer;
   }
 }
+<<<<<<< Updated upstream
 
 @media screen and (min-width: 480px) {
+=======
+@media screen and (min-width: 767px) {
+>>>>>>> Stashed changes
   .nav-container .nav-toggle {
     position: relative;
     width: 20px;
@@ -185,7 +189,7 @@ body {
     position: absolute;
     top: 20px;
     left: -40%;
-    transform: translate(-33vw, 30px);
+    transform: translate(calc(-1400% + 9vw), 30px);
     width: 100%;
     height: 2px;
     background: #D41443;
@@ -206,17 +210,36 @@ body {
   background-color: #fff;
   border: none;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .nav-items__buy {
   color: #D41443;
-  font-family: "Titan One";
+  font-family: "DM Sans";
   font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 30px;
-  letter-spacing: 0.04em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.nav-items__marker {
+  color: #D41443;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 8px;
 }
 
 .nav-item__anchor {
@@ -243,7 +266,7 @@ body {
   width: 100%;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .hero-header {
     display: flex;
     flex-direction: column;
@@ -265,7 +288,7 @@ body {
   padding-top: 6px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .header-top__logo {
     width: 199px;
     height: 50px;
@@ -279,7 +302,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .header-top__buy {
     display: inline-block;
     width: 160px;
@@ -298,7 +321,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .header-top__buylink {
     display: inline-block;
     color: #D41443;
@@ -344,7 +367,7 @@ body {
   bottom: 110px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .hero-header__buttons {
     position: relative;
     bottom: 65px;
@@ -401,13 +424,13 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .hero-header__eat {
     position: relative;
     display: flex;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .header-eat__number {
     font-family: "Titan One";
     font-style: normal;
@@ -424,12 +447,12 @@ body {
     width: 35px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .--cafes {
     margin-bottom: 50px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .header-eat__span {
     font-family: "DM Sans";
     font-style: normal;
@@ -444,7 +467,7 @@ body {
     width: 100%;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .--trucks-span {
     width: 55px;
     text-align: left;
@@ -455,7 +478,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .cafe-circle {
     position: absolute;
     top: 0px;
@@ -468,7 +491,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .truck-circle {
     position: absolute;
     top: 0px;
@@ -482,20 +505,20 @@ body {
   background-image: url("/images/elipse-mobile.png");
   background-size: 344px;
   background-repeat: no-repeat;
-  width: 100vw;
+  width: 67vw;
   top: 100px;
   left: 30vw;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .hero-header__icediv {
     position: absolute;
     background-image: url("/images/elipse-mobile.png");
-    background-size: 344px;
+    background-size: 324px;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 50vw;
     top: 30px;
-    left: 30vw;
+    left: 40vw;
   }
 }
 .header-bottom__icecream {
@@ -505,7 +528,7 @@ body {
   margin-top: -8px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .header-bottom__icecream {
     width: 143px;
     height: 336px;
@@ -517,7 +540,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .hero-header__milkdiv {
     display: inline-block;
     position: absolute;
@@ -530,7 +553,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .hero-header__tastydiv {
     display: inline-block;
     position: absolute;
@@ -618,7 +641,7 @@ body {
   cursor: pointer;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .nav-container .nav-items {
     position: absolute;
     overflow: hidden;
@@ -645,7 +668,7 @@ body {
     cursor: pointer;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .nav-container .nav-toggle {
     position: relative;
     width: 20px;
@@ -661,7 +684,7 @@ body {
     position: absolute;
     top: 20px;
     left: -40%;
-    transform: translate(-33vw, 30px);
+    transform: translate(calc(-1400% + 9vw), 30px);
     width: 100%;
     height: 2px;
     background: #D41443;
@@ -681,17 +704,36 @@ body {
   background-color: #fff;
   border: none;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .nav-items__buy {
   color: #D41443;
-  font-family: "Titan One";
+  font-family: "DM Sans";
   font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 30px;
-  letter-spacing: 0.04em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.nav-items__marker {
+  color: #D41443;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 8px;
 }
 
 .nav-item__anchor {

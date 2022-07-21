@@ -110,7 +110,7 @@ $toggleColor: #fff;
     }
 }
 
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 767px) {
     .nav-container .nav-items {
         position: absolute;
         overflow: hidden;
@@ -140,73 +140,93 @@ $toggleColor: #fff;
         }
     }
 }
-@media screen and(min-width: 480px){
+
+@media screen and(min-width: 767px) {
     .nav-container .nav-toggle {
-            $offset: $toggleSize * 0.5;
-    
-            position: relative;
-            width: $toggleSize;
-            height: $toggleSize;
-            margin: $toggleMargin;
-            z-index: 1000;
-    
-            &:hover {
-                cursor: pointer;
-            }
-    
-            &:before,
-            &:after {
-                content: "";
-                position: absolute;
-                top: 20px;
-                left: -40%;
-                transform: translate(-33vw, 30px);
-                width: 100%;
-                height: $toggleLine;
-                background: #D41443;
-                transition: transform .3s ease, box-shadow .3s ease;
-            }
-    
-            &:before {
-                box-shadow: 0 #{$offset / 1.5} 0 0 #D41443;
-            }
-    
-            &:after {
-                box-shadow: 0 #{-$offset / 1.5} 0 0 #D41443;
-            }
+        $offset: $toggleSize * 0.5;
+
+        position: relative;
+        width: $toggleSize;
+        height: $toggleSize;
+        margin: $toggleMargin;
+        z-index: 1000;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: -40%;
+            transform: translate(calc(-1400% + 9vw), 30px);
+            width: 100%;
+            height: $toggleLine;
+            background: #D41443;
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+
+        &:before {
+            box-shadow: 0 #{$offset / 1.5} 0 0 #D41443;
+        }
+
+        &:after {
+            box-shadow: 0 #{-$offset / 1.5} 0 0 #D41443;
         }
     }
+}
 
 
-.nav-items__button{
+.nav-items__button {
     width: 209px;
     height: 44px;
     border-radius: 22px;
     background-color: #fff;
     border: none;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
-.nav-items__buy{
+.nav-items__buy {
     color: #D41443;
-        font-family: 'Titan One';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
-        letter-spacing: 0.04em;
-        text-decoration: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
-.nav-item__anchor{
+.nav-items__marker {
+    color: #D41443;
     font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 18px;
-        text-decoration: none;
-        color: #fff;
-        background-color: transparent;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 8px;
+}
+
+.nav-item__anchor {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
 }
 
 .nav-item__anchor:hover {
