@@ -81,9 +81,7 @@ body {
 }
 .nav-container.is-active .nav-items {
   transform: translate(calc(100vw - 100%), 0);
-
   visibility: visible;
-
 }
 .nav-container .nav-toggle {
   position: relative;
@@ -118,10 +116,8 @@ body {
   overflow: hidden;
   top: 0;
   left: 0;
-
   height: 502px;
   width: 100%;
-
   z-index: 999;
   padding: 80px 20px 20px 10px;
   transition: transform 0.3s ease;
@@ -148,7 +144,7 @@ body {
     top: 0;
     left: 0;
     height: 100vh;
-    min-width: 260px;
+    width: 254px;
     z-index: 999;
     padding: 80px 20px 20px 10px;
     transition: transform 0.3s ease;
@@ -168,12 +164,7 @@ body {
     cursor: pointer;
   }
 }
-<<<<<<< Updated upstream
-
-@media screen and (min-width: 480px) {
-=======
 @media screen and (min-width: 767px) {
->>>>>>> Stashed changes
   .nav-container .nav-toggle {
     position: relative;
     width: 20px;
@@ -202,7 +193,6 @@ body {
     box-shadow: 0 -6.6666666667px 0 0 #D41443;
   }
 }
-
 .nav-items__button {
   width: 209px;
   height: 44px;
@@ -618,10 +608,8 @@ body {
   overflow: hidden;
   top: 0;
   left: 0;
-
   height: 502px;
   width: 100%;
-
   z-index: 999;
   padding: 80px 20px 20px 10px;
   transition: transform 0.3s ease;
@@ -648,7 +636,7 @@ body {
     top: 0;
     left: 0;
     height: 100vh;
-    min-width: 260px;
+    width: 254px;
     z-index: 999;
     padding: 80px 20px 20px 10px;
     transition: transform 0.3s ease;
