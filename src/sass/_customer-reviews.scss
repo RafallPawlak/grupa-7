@@ -1,26 +1,12 @@
 .slick__container {
-  @media screen and (min-width: 768px) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
 
-  @media screen and (min-width: 1280px) {
-    padding-left: 63px;
-    padding-right: 61px;
-  }
 }
 
 .slick {
   padding-top: 80px;
   background-color: #ffffff;
 
-  @media screen and (min-width: 768px) {
-    padding-top: 121px;
-  }
 
-  @media screen and (min-width: 1280px) {
-    padding-top: 123px;
-  }
 }
 
 .slick__text {
@@ -45,31 +31,6 @@
     #fafafa 31px
   );
 
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 2.14;
-
-    background-image: repeating-linear-gradient(
-      to top,
-      #e1e1e1,
-      #e1e1e1 1px,
-      #fafafa 1px,
-      #fafafa 30px
-    );
-  }
-
-  @media screen and (min-width: 1280px) {
-    font-size: 16px;
-    line-height: 1.88;
-
-    background-image: repeating-linear-gradient(
-      to top,
-      #e1e1e1,
-      #e1e1e1 1px,
-      #fafafa 1px,
-      #fafafa 30.5px
-    );
-  }
 }
 .slick__text::before {
   content: '';
@@ -85,15 +46,6 @@
 
   z-index: -1;
 
-  @media screen and (min-width: 768px) {
-    top: -16px;
-    left: -31px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    top: -14px;
-    left: -38px;
-  }
 }
 .slick__text::after {
   content: '';
@@ -107,15 +59,6 @@
 
   background-image: url(../images/slider/dots.svg);
 
-  @media screen and (min-width: 768px) {
-    top: 135px;
-    left: 44%;
-  }
-
-  @media screen and (min-width: 1280px) {
-    top: 120px;
-    left: 47%;
-  }
 }
 
 .slick__text-thumb {
@@ -129,21 +72,6 @@
 
   background-color: #fafafa;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 24px;
-    padding-top: 47px;
-    padding-bottom: 34px;
-    padding-right: 36px;
-    padding-left: 60px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 34px;
-    padding-top: 47px;
-    padding-bottom: 39px;
-    padding-right: 54px;
-    padding-left: 59px;
-  }
 }
 
 .slick__image {
@@ -155,13 +83,6 @@
   width: 85px;
   height: 85px;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 19px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 15px;
-  }
 }
 
 .slick__label {
@@ -179,17 +100,6 @@
 
   text-align: center;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 35px;
-
-    font-size: 16px;
-    line-height: 1.88;
-  }
-
-  @media screen and (min-width: 1280px) {
-    font-size: 20px;
-    line-height: 1.85;
-  }
 }
 
 // Slider styles //
