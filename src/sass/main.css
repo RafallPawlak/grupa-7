@@ -94,8 +94,10 @@ ol {
 
 .products-first__heading {
   text-align: center;
+  position: relative;
   font-size: 34px;
   color: var(--dark-pink);
+  margin-bottom: 31px;
 }
 
 .product-square__item {
@@ -145,7 +147,7 @@ ol {
   color: var(--text-color);
 }
 
-.test {
+.product-background__radius_pink {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,12 +155,30 @@ ol {
   width: 230px;
   height: 230px;
   margin-left: 10px;
-  border-radius: 50%;
-  background-color: rgb(248, 140, 165);
 }
 
-.test2 {
-  margin-top: -95px;
+.product-background__radius_yellow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 230px;
+  height: 230px;
+  margin-left: 10px;
+}
+
+.product-background__radius_green {
+  align-items: center;
+  width: 230px;
+  height: 230px;
+  margin-left: 10px;
+}
+
+.product-margin_pic {
+  margin-top: -115px;
+  padding-top: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .product_radius {
