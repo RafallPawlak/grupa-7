@@ -67,6 +67,9 @@ body {
   overflow: visible;
   outline: none;
 }
+.nav-container.is-active .nav-items {
+  visibility: visible;
+}
 .nav-container.is-active .nav-toggle:before, .nav-container.is-active .nav-toggle:after {
   box-shadow: none;
 }
@@ -108,6 +111,7 @@ body {
 }
 .nav-container .nav-items {
   position: absolute;
+  visibility: hidden;
   overflow: hidden;
   top: 0;
   left: 0;
@@ -420,6 +424,9 @@ body {
   overflow: visible;
   outline: none;
 }
+.nav-container.is-active .nav-items {
+  visibility: visible;
+}
 .nav-container.is-active .nav-toggle:before, .nav-container.is-active .nav-toggle:after {
   box-shadow: none;
 }
@@ -461,6 +468,7 @@ body {
 }
 .nav-container .nav-items {
   position: absolute;
+  visibility: hidden;
   overflow: hidden;
   top: 0;
   left: 0;

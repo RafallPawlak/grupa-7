@@ -9,9 +9,15 @@ $toggleColor: #fff;
     max-height: $toggleSize + $toggleMargin;
     overflow: visible;
     outline: none;
+    
 
     //&:focus-within, &:focus {
     &.is-active {
+
+        .nav-items {
+            visibility: visible;
+        }
+        
         .nav-toggle {
 
             &:before,
@@ -68,10 +74,12 @@ $toggleColor: #fff;
         }
     }
 
+
+
     .nav-items {
         position: absolute;
+        visibility: hidden;
         overflow: hidden;
-
         top: 0;
         left: 0;
         height: 502px;
