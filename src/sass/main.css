@@ -360,4 +360,18 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.slick__slider .slick-dots li {
+  list-style: none;
+}
+
+.slick__slider .slick-dots li:not(:first-child) button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 50%;
+  margin-right: 18px;
 }/*# sourceMappingURL=main.css.map */
