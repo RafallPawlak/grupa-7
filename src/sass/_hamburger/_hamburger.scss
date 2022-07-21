@@ -1,7 +1,7 @@
 $toggleSize: 20px;
 $toggleMargin: 10px;
 $toggleLine: 2px;
-$toggleColor: var(--dark-pink);
+$toggleColor: #fff;
 
 .nav-container {
     display: inline-block;
@@ -29,7 +29,7 @@ $toggleColor: var(--dark-pink);
         }
 
         .nav-items {
-            transform: translate(60vw, 0);
+            transform: translate(calc(100vw - 100%), 0);
         }
     }
 
@@ -40,7 +40,7 @@ $toggleColor: var(--dark-pink);
         width: $toggleSize;
         height: $toggleSize;
         margin: $toggleMargin;
-        z-index: 902;
+        z-index: 911;
 
         &:hover {
             cursor: pointer;
@@ -73,9 +73,9 @@ $toggleColor: var(--dark-pink);
         overflow: hidden;
         top: 0;
         left: 0;
-        height: 100vh;
-        width: 40vw;
-        z-index: 901;
+        height: 502px;
+        min-width: 260px;
+        z-index: 910;
         padding: 80px 20px 20px 10px;
         transition: transform .3s ease;
         transform: translate(calc(100vw), 0);
@@ -87,13 +87,12 @@ $toggleColor: var(--dark-pink);
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 
         .nav-item {
-            background: darken(#EFEFEF, 5%);
-            padding: 10px;
+
+            padding: 15px;
             transition: background-color .3s ease;
 
             &:hover {
                 cursor: pointer;
-                background: darken(#EFEFEF, 10%);
             }
         }
     }
@@ -105,4 +104,31 @@ $toggleColor: var(--dark-pink);
     border-radius: 22px;
     background-color: #fff;
     border-color: #fff;
+    margin: 0 auto;
+}
+
+.nav-items__buy{
+    color: #D41443;
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        text-decoration: none;
+}
+
+.nav-item__anchor{
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        text-decoration: none;
+        color: #fff;
+        background-color: transparent;
+}
+
+.nav-item__anchor:hover {
+    color: #D41443;
 }

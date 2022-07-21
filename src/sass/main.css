@@ -42,6 +42,7 @@ ol {
 .hero-header {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background-color: var(--product-pink);
   height: 502px;
   width: 100%;
@@ -59,25 +60,102 @@ ol {
   padding-top: 6px;
 }
 
-.hero-header__icecream {
+.hero-header__topic {
+  width: 218px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.header-topic__p {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: #fff;
   position: relative;
+  z-index: 903;
+}
+
+.header-topic__span {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 45.84px;
+  color: #D41443;
+  position: relative;
+  z-index: 903;
+}
+
+.hero-header__buttons {
+  position: relative;
+  bottom: 140px;
+}
+
+.hero-button__product {
+  border-radius: 20px;
+  width: 61px;
+  height: 24px;
+  border: none;
+  margin-left: 20px;
+  position: relative;
+  z-index: 902;
+}
+
+.hero-button__product:hover {
+  background: #D41443;
+}
+
+.hero-button__how {
+  border-radius: 20px;
+  width: 82px;
+  height: 24px;
+  border: none;
+  position: relative;
+  z-index: 903;
+}
+
+.hero-button__how:hover {
+  background: #D41443;
+}
+
+.hero-button__link {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #D41443;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-button__link:hover {
+  color: #fff;
+}
+
+.hero-header__icecream {
+  position: absolute;
+  background-image: url("/images/elipse-mobile.png");
+  background-size: 344px;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 502px;
+  top: 100px;
+  left: 20%;
 }
 
 .header-bottom__img {
   width: 171px;
   height: 410px;
-  position: absolute;
-  top: -37px;
-  left: 35%;
-  z-index: 900;
-}
-
-.header-topic__p {
-  color: white;
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 29.77px;
-  letter-spacing: 4%;
+  margin-left: 50px;
+  margin-top: -8px;
 }
 
 .nav-container {
@@ -97,14 +175,14 @@ ol {
   transform: rotate(45deg);
 }
 .nav-container.is-active .nav-items {
-  transform: translate(60vw, 0);
+  transform: translate(calc(100vw - 100%), 0);
 }
 .nav-container .nav-toggle {
   position: relative;
   width: 20px;
   height: 20px;
   margin: 10px;
-  z-index: 902;
+  z-index: 911;
 }
 .nav-container .nav-toggle:hover {
   cursor: pointer;
@@ -117,23 +195,23 @@ ol {
   transform: translate(0, 0);
   width: 100%;
   height: 2px;
-  background: var(--dark-pink);
+  background: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .nav-container .nav-toggle:before {
-  box-shadow: 0 6.6666666667px 0 0 var(--dark-pink);
+  box-shadow: 0 6.6666666667px 0 0 #fff;
 }
 .nav-container .nav-toggle:after {
-  box-shadow: 0 -6.6666666667px 0 0 var(--dark-pink);
+  box-shadow: 0 -6.6666666667px 0 0 #fff;
 }
 .nav-container .nav-items {
   position: absolute;
   overflow: hidden;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 40vw;
-  z-index: 901;
+  height: 502px;
+  min-width: 260px;
+  z-index: 910;
   padding: 80px 20px 20px 10px;
   transition: transform 0.3s ease;
   transform: translate(100vw, 0);
@@ -145,13 +223,11 @@ ol {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
 .nav-container .nav-items .nav-item {
-  background: #e2e2e2;
-  padding: 10px;
+  padding: 15px;
   transition: background-color 0.3s ease;
 }
 .nav-container .nav-items .nav-item:hover {
   cursor: pointer;
-  background: #d6d6d6;
 }
 
 .nav-items__button {
@@ -160,6 +236,33 @@ ol {
   border-radius: 22px;
   background-color: #fff;
   border-color: #fff;
+  margin: 0 auto;
+}
+
+.nav-items__buy {
+  color: #D41443;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.nav-item__anchor {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+}
+
+.nav-item__anchor:hover {
+  color: #D41443;
 }
 
 .products-second__heading {
