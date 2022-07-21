@@ -78,6 +78,38 @@ ol {
     padding-top: 36px;
   }
 }
+.header-top__buy {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .header-top__buy {
+    display: inline-block;
+    width: 209px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #fff;
+    border: none;
+    margin: 0 auto;
+  }
+}
+.header-top__buylink {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .header-top__buylink {
+    display: inline-block;
+    color: #D41443;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+  }
+}
 .hero-header__topic {
   width: 218px;
   padding-left: 20px;
@@ -250,7 +282,7 @@ ol {
   width: 20px;
   height: 20px;
   margin: 10px;
-  z-index: 911;
+  z-index: 1000;
 }
 .nav-container .nav-toggle:hover {
   cursor: pointer;
@@ -279,7 +311,7 @@ ol {
   left: 0;
   height: 502px;
   min-width: 260px;
-  z-index: 910;
+  z-index: 999;
   padding: 80px 20px 20px 10px;
   transition: transform 0.3s ease;
   transform: translate(100vw, 0);
@@ -298,12 +330,39 @@ ol {
   cursor: pointer;
 }
 
+@media screen and (min-width: 480px) {
+  .nav-container .nav-items {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    min-width: 260px;
+    z-index: 999;
+    padding: 80px 20px 20px 10px;
+    transition: transform 0.3s ease;
+    transform: translate(100vw, 0);
+    background: #E17992;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px 0;
+    align-content: start;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  }
+  .nav-container .nav-items .nav-item {
+    padding: 15px;
+    transition: background-color 0.3s ease;
+  }
+  .nav-container .nav-items .nav-item:hover {
+    cursor: pointer;
+  }
+}
 .nav-items__button {
   width: 209px;
   height: 44px;
   border-radius: 22px;
   background-color: #fff;
-  border-color: #fff;
+  border: none;
   margin: 0 auto;
 }
 

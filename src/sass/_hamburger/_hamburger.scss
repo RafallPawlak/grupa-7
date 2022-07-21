@@ -40,7 +40,7 @@ $toggleColor: #fff;
         width: $toggleSize;
         height: $toggleSize;
         margin: $toggleMargin;
-        z-index: 911;
+        z-index: 1000;
 
         &:hover {
             cursor: pointer;
@@ -75,7 +75,38 @@ $toggleColor: #fff;
         left: 0;
         height: 502px;
         min-width: 260px;
-        z-index: 910;
+        z-index: 999;
+        padding: 80px 20px 20px 10px;
+        transition: transform .3s ease;
+        transform: translate(calc(100vw), 0);
+        background: #E17992;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px 0;
+        align-content: start;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+
+        .nav-item {
+
+            padding: 15px;
+            transition: background-color .3s ease;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 480px) {
+    .nav-container .nav-items {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        min-width: 260px;
+        z-index: 999;
         padding: 80px 20px 20px 10px;
         transition: transform .3s ease;
         transform: translate(calc(100vw), 0);
@@ -103,7 +134,7 @@ $toggleColor: #fff;
     height: 44px;
     border-radius: 22px;
     background-color: #fff;
-    border-color: #fff;
+    border: none;
     margin: 0 auto;
 }
 
