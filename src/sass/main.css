@@ -357,6 +357,12 @@ ol {
     cursor: pointer;
   }
 }
+@media screen and (min-width: 480px) {
+  .nav-container .nav-toggle {
+    position: absolute;
+    right: 0;
+  }
+}
 .nav-items__button {
   width: 209px;
   height: 44px;
