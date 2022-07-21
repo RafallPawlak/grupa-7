@@ -1,11 +1,13 @@
 //Utils
 @import "./utils/variables";
+@import "./utils/visually-hidden";
 
 //General
 @import "./general/general-styles";
 @import './base/container';
 
 //Hero
+@import "./_hamburger/hamburger";
 @import './header-hero';
 @import './_hamburger/hamburger';
 
@@ -21,4 +23,4 @@
 @import './contacts';
 @import './footer';
 
-@import './example';
+
