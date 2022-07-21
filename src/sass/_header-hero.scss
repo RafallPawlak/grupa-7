@@ -7,15 +7,15 @@
     width: 100%;
 }
 
-@media screen and(min-width: 480px){
-.hero-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: var(--product-pink);
-    height: 399px;
-    width: 100%;
-}
+@media screen and(min-width: 480px) {
+    .hero-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: var(--product-pink);
+        height: 399px;
+        width: 100%;
+    }
 }
 
 .header-top {
@@ -30,44 +30,54 @@
     padding-top: 6px;
 }
 
-@media screen and(min-width: 480px) {.header-top__logo {
+@media screen and(min-width: 480px) {
+    .header-top__logo {
         width: 199px;
         height: 50px;
         padding-left: 20px;
         padding-top: 36px;
-    }}
+        position: relative;
+        z-index: 901;
+    }
+}
 
 .header-top__buy {
     display: none;
 }
 
-@media screen and(min-width: 480px){
+@media screen and(min-width: 480px) {
     .header-top__buy {
-            display: inline-block;
-                width: 209px;
-                    height: 44px;
-                    border-radius: 22px;
-                    background-color: #fff;
-                    border: none;
-                    margin: 0 auto;
-        }
+        display: inline-block;
+        width: 160px;
+        height: 44px;
+        border-radius: 22px;
+        background-color: #fff;
+        border: none;
+        margin: 0 auto;
+        position: absolute;
+        top: 38px;
+        right: 1%;
+        z-index: 900;
+    }
 }
 
-.header-top__buylink{
+.header-top__buylink {
     display: none;
 }
 
-@media screen and(min-width: 480px) {.header-top__buylink {
+@media screen and(min-width: 480px) {
+    .header-top__buylink {
         display: inline-block;
-            color: #D41443;
-                font-family: 'Titan One';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 26px;
-                line-height: 30px;
-                letter-spacing: 0.04em;
-                text-decoration: none;
-    }}
+        color: #D41443;
+font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+        letter-spacing: 0.04em;
+        text-decoration: none;
+    }
+}
 
 .hero-header__topic {
     width: 218px;
@@ -104,9 +114,9 @@
 
 @media screen and(min-width: 480px) {
     .hero-header__buttons {
-            position: relative;
-            bottom: 65px;
-        }
+        position: relative;
+        bottom: 65px;
+    }
 }
 
 .hero-button__product {
@@ -156,6 +166,89 @@
     color: #fff;
 }
 
+.hero-header__eat{
+    display: none;
+}
+
+@media screen and(min-width: 480px) {
+.hero-header__eat{
+position: relative;
+display: flex;
+}}
+
+@media screen and(min-width: 480px) {
+.header-eat__number{
+font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: #D41443;
+    position: absolute;
+    z-index: 900;
+    bottom: 160px;
+right: 25px;
+width: 35px;
+}}
+
+@media screen and(min-width: 480px) {
+.--cafes{
+    margin-bottom: 50px;
+}}
+
+@media screen and(min-width: 480px) {
+.header-eat__span{
+font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: normal;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}}
+
+@media screen and(min-width: 480px) {
+.--trucks-span{
+        width: 55px;
+        text-align: left;
+        margin-left: -7px;
+}}
+
+.cafe-circle{
+    display: none;
+}
+
+@media screen and(min-width: 480px) {}
+@media screen and(min-width: 480px) {
+    .cafe-circle{
+        position: absolute;
+        top: 0px;
+        right: -1vw;
+        display: flex;
+        z-index: -1;
+    }
+}
+
+.truck-circle{
+    display: none;
+}
+
+@media screen and(min-width: 480px) {
+    .truck-circle {
+        position: absolute;
+        top: 0px;
+        right: -1vw;
+        display: flex;
+        z-index: -1;
+    }
+}
+
 .hero-header__icediv {
     position: absolute;
     background-image: url("/images/elipse-mobile.png");
@@ -165,17 +258,18 @@
     top: 100px;
     left: 30vw;
 }
-@media screen and(min-width: 480px) {}
+
+
 @media screen and(min-width: 480px) {
     .hero-header__icediv {
-            position: absolute;
-            background-image: url("/images/elipse-mobile.png");
-            background-size: 344px;
-            background-repeat: no-repeat;
-            width: 100vw;
-            top: 30px;
-            left: 30vw;
-        }
+        position: absolute;
+        background-image: url("/images/elipse-mobile.png");
+        background-size: 344px;
+        background-repeat: no-repeat;
+        width: 100vw;
+        top: 30px;
+        left: 30vw;
+    }
 }
 
 .header-bottom__icecream {
@@ -187,25 +281,25 @@
 
 @media screen and(min-width: 480px) {
     .header-bottom__icecream {
-            width: 143px;
-            height: 336px;
-            margin-left: 70px;
-            margin-top: 32px;
-        }
+        width: 143px;
+        height: 336px;
+        margin-left: 70px;
+        margin-top: 32px;
+    }
 }
 
 .hero-header__milkdiv {
     display: none;
 }
 
-@media screen and(min-width: 480px){
-.hero-header__milkdiv{
-    display: inline-block;
-    position: absolute;
-    z-index: 920;
-    left: 2%;
-    top: 260px;
-}
+@media screen and(min-width: 480px) {
+    .hero-header__milkdiv {
+        display: inline-block;
+        position: absolute;
+        z-index: 920;
+        left: 2%;
+        top: 260px;
+    }
 }
 
 .hero-header__tastydiv {
@@ -218,6 +312,6 @@
         position: absolute;
         z-index: 920;
         right: 2%;
-        top: 265px;
+        top: 266px;
     }
 }
