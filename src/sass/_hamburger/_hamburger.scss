@@ -30,6 +30,7 @@ $toggleColor: #fff;
 
         .nav-items {
             transform: translate(calc(100vw - 100%), 0);
+            visibility: visible;
         }
     }
 
@@ -70,10 +71,11 @@ $toggleColor: #fff;
 
     .nav-items {
         position: absolute;
+        visibility: hidden;
         overflow: hidden;
         top: 0;
         left: 0;
-        height: 502px;
+        height: 100vh;
         min-width: 260px;
         z-index: 999;
         padding: 80px 20px 20px 10px;
@@ -129,11 +131,42 @@ $toggleColor: #fff;
     }
 }
 @media screen and(min-width: 480px){
-    .nav-container .nav-toggle{
-        position: absolute;
-        right: 0;
+    .nav-container .nav-toggle {
+            $offset: $toggleSize * 0.5;
+    
+            position: relative;
+            width: $toggleSize;
+            height: $toggleSize;
+            margin: $toggleMargin;
+            z-index: 1000;
+    
+            &:hover {
+                cursor: pointer;
+            }
+    
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                top: 20px;
+                left: -40%;
+                transform: translate(-33vw, 30px);
+                width: 100%;
+                height: $toggleLine;
+                background: #D41443;
+                transition: transform .3s ease, box-shadow .3s ease;
+            }
+    
+            &:before {
+                box-shadow: 0 #{$offset / 1.5} 0 0 #D41443;
+            }
+    
+            &:after {
+                box-shadow: 0 #{-$offset / 1.5} 0 0 #D41443;
+            }
+        }
     }
-}
+
 
 .nav-items__button{
     width: 209px;
