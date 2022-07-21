@@ -273,36 +273,11 @@ ol {
 .product__item {
   padding-left: 20px;
   padding-right: 20px;
-<<<<<<< Updated upstream
-=======
-}
-
-@media screen and (min-width: 768px) {
-  .slick__container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .slick__container {
-    padding-left: 63px;
-    padding-right: 61px;
-  }
 }
 
 .slick {
   padding-top: 80px;
   background-color: #ffffff;
-}
-@media screen and (min-width: 768px) {
-  .slick {
-    padding-top: 121px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .slick {
-    padding-top: 123px;
-  }
 }
 
 .slick__text {
@@ -317,20 +292,6 @@ ol {
   letter-spacing: 0.04em;
   background-image: repeating-linear-gradient(to top, #e1e1e1, #e1e1e1 1px, #fafafa 1px, #fafafa 31px);
 }
-@media screen and (min-width: 768px) {
-  .slick__text {
-    font-size: 14px;
-    line-height: 2.14;
-    background-image: repeating-linear-gradient(to top, #e1e1e1, #e1e1e1 1px, #fafafa 1px, #fafafa 30px);
-  }
-}
-@media screen and (min-width: 1280px) {
-  .slick__text {
-    font-size: 16px;
-    line-height: 1.88;
-    background-image: repeating-linear-gradient(to top, #e1e1e1, #e1e1e1 1px, #fafafa 1px, #fafafa 30.5px);
-  }
-}
 
 .slick__text::before {
   content: "";
@@ -342,18 +303,6 @@ ol {
   background-image: url(../images/slider/“.svg);
   z-index: -1;
 }
-@media screen and (min-width: 768px) {
-  .slick__text::before {
-    top: -16px;
-    left: -31px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .slick__text::before {
-    top: -14px;
-    left: -38px;
-  }
-}
 
 .slick__text::after {
   content: "";
@@ -363,18 +312,6 @@ ol {
   width: 32px;
   height: 4px;
   background-image: url(../images/slider/dots.svg);
-}
-@media screen and (min-width: 768px) {
-  .slick__text::after {
-    top: 135px;
-    left: 44%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .slick__text::after {
-    top: 120px;
-    left: 47%;
-  }
 }
 
 .slick__text-thumb {
@@ -387,24 +324,6 @@ ol {
   padding-left: 50px;
   background-color: #fafafa;
 }
-@media screen and (min-width: 768px) {
-  .slick__text-thumb {
-    margin-bottom: 24px;
-    padding-top: 47px;
-    padding-bottom: 34px;
-    padding-right: 36px;
-    padding-left: 60px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .slick__text-thumb {
-    margin-bottom: 34px;
-    padding-top: 47px;
-    padding-bottom: 39px;
-    padding-right: 54px;
-    padding-left: 59px;
-  }
-}
 
 .slick__image {
   display: block;
@@ -413,16 +332,6 @@ ol {
   margin-bottom: 29px;
   width: 85px;
   height: 85px;
-}
-@media screen and (min-width: 768px) {
-  .slick__image {
-    margin-bottom: 19px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .slick__image {
-    margin-bottom: 15px;
-  }
 }
 
 .slick__label {
@@ -436,19 +345,6 @@ ol {
   line-height: 1.86;
   color: #000000;
   text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .slick__label {
-    margin-bottom: 35px;
-    font-size: 16px;
-    line-height: 1.88;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .slick__label {
-    font-size: 20px;
-    line-height: 1.85;
-  }
 }
 
 .slick-list {
@@ -464,47 +360,4 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.slick__slider .slick-dots li {
-  list-style: none;
-}
-
-.slick__slider .slick-dots li:not(:first-child) button {
-  font-size: 0;
-  width: 12px;
-  height: 12px;
-  background-color: #d9d9d9;
-  border: none;
-  border-radius: 50%;
-  margin-right: 18px;
-}
-
-.slick__slider .slick-dots li.slick-active button {
-  background-color: #d31342;
-}
-
-.slick__slider .slick-dots li:first-child button {
-  font-size: 0;
-  width: 13px;
-  height: 12px;
-  background-image: url(../images/slider/home2.svg);
-  background-size: cover;
-  background-origin: padding-box;
-  border: none;
-  margin-right: 18px;
-  background-color: transparent;
-}
-
-.slick__slider .slick-dots li.slick-active:first-child button {
-  font-size: 0;
-  width: 13px;
-  height: 12px;
-  background-image: url(../images/slider/home.svg);
-  background-size: cover;
-  background-origin: padding-box;
-  border: none;
-  margin-right: 18px;
-  background-color: transparent;
->>>>>>> Stashed changes
 }/*# sourceMappingURL=main.css.map */
