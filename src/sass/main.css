@@ -29,6 +29,15 @@ ol {
   list-style-type: none;
 }
 
+body {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
 .container {
   padding: 0px 20px;
   margin: 0 auto;
