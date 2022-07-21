@@ -15,29 +15,54 @@
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
     <header class="hero-header">
     <section class="hero-header__top header-top">
-        <div class="header-top__logo">
+        <div class="header-top__logo"><img class="header-top__img" src="/logo 1.18ef90f6.png"></div>
 
+        <!-- hamburger menu -->
+        <div class="nav-container" tabindex="0">
+            <div class="nav-toggle"></div>
+            <ul class="nav-items">
+                <button class="nav-items__button"><a href="" class="nav-items__buy">Buy now &gt;</a></button>
+                <li class="nav-item"><a class="nav-item__anchor" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-item__anchor" href="#">About us</a></li>
+                <li class="nav-item"><a class="nav-item__anchor" href="#">How it's made?</a></li>
+                <li class="nav-item"><a class="nav-item__anchor" href="#">Our products</a></li>
+                <li class="nav-item"><a class="nav-item__anchor" href="#">Contact</a></li>
+            </ul>
         </div>
-        <div class="menu-mobile"></div>
-        <ul class="menu">
-            <li><a class="menuItem" href="#">Home</a></li>
-            <li><a class="menuItem" href="#">Profile</a></li>
-            <li><a class="menuItem" href="#">About</a></li>
-            <li><a class="menuItem" href="#">Contacts</a></li>
-        </ul>
-        <button class="hamburger">
-            <!-- material icons https://material.io/resources/icons/ -->
-            <i class="menuIcon material-icons">menu</i>
-            <i class="closeIcon material-icons">close</i>
-        </button>
-
+    <!-- hamburger menu -->
+    <button class="header-top__buy"><a class="header-top__buylink" href="#">Buy now &gt;</a></button>
+<!-- topic -->
     </section>
-    <section class="hero-header__topic">
-
+    <section class="hero-header__topic header-topic">
+        <p class="header-topic__p">ICE CREAM
+        </p><p class="header-topic__p">MADE WITH</p>
+        <p></p>
+        <span class="header-topic__span">PASSION</span>
     </section>
-    <section class="hero-header__buttons">
+<!-- topic -->
 
+<!-- buttons -->
+    <section class="hero-header__buttons hero-button">
+        <button class="hero-button__product"><a class="hero-button__link" href="#products">Products</a></button>
+        <button class="hero-button__how"> <a class="hero-button__link" href="">How it's made?</a></button>
     </section>
+<!-- buttons -->
+
+<!-- food trucks cafes -->
+<section class="hero-header__eat header-eat">
+<div class="header-eat__number --cafes"><p>16</p><span class="header-eat__span">cafes</span><img class="cafe-circle" src="/number-circle.e3cdcae1.png"> </div>
+<div class="header-eat__number --foodtrucks"><p>23</p><span class="header-eat__span --trucks-span">food trucks</span><img class="truck-circle" src="/number-circle.e3cdcae1.png"></div>
+</section>
+<!-- food trucks cafes -->
+
+<!-- imgs-->
+<section class="hero-header__images">
+    <div class="hero-header__icediv"><img class="header-bottom__icecream" src="/lód-header.d07f9b1b.png"></div>
+<div class="hero-header__milkdiv"><img class="header-bottom__milk" src="/milk.0a0970c7.png"></div>
+<div class="hero-header__tastydiv"><img class="header-bottom__tasty" src="/tasty.46be1dd0.png"></div>
+
+</section>
+    <!-- imgs -->
 </header>
     <section>
     <div>
@@ -79,17 +104,56 @@
 
 </section>
     
-    advantages <br>
-    gallery<br>
     
-customer-reviews <br>
+    
+    <section class="slick">
+  <div class="container slick__container">
+    <h2 class="slick__title visually-hidden" id="customer-reviews">Customer reviews</h2>
+    <ul class="slick__slider">
+      <li class="slick__item">
+        <img class="slick__image" srcset="/1customer.3efa6a07.jpg 1x,/1customer@2x.52c24149.jpg 2x" src="/1customer.3efa6a07.jpg" alt="First Customer photo">
+        <div class="slick__text-thumb">
+          <p class="slick__text">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </p>
+        </div>
+        <span class="slick__label">Emily, Los Angeles</span>
+      </li>
+      <li class="slick__item">
+        <img class="slick__image" srcset="/2customer.4f66433b.jpg 1x,/2customer@2x.329c021c.jpg 2x" src="/2customer.4f66433b.jpg" alt="Second Customer photo">
+        <div class="slick__text-thumb">
+          <p class="slick__text">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </p>
+        </div>
+        <span class="slick__label">Leslie, Chicago</span>
+      </li>
+      <li class="slick__item">
+        <img class="slick__image" srcset="/3customer.cc2194fb.jpg 1x,/3customer@2x.06c9a683.jpg 2x" src="/3customer.cc2194fb.jpg" alt="Third Customer photo">
+        <div class="slick__text-thumb">
+          <p class="slick__text">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </p>
+        </div>
+        <span class="slick__label">Monica, New York</span>
+      </li>
+    </ul>
+  </div>
+</section>
 
-
-    contacts <br>
-    footer 
+    
+    
 
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
-    
+    <script src="/src.e31bb0bc.js"></script>
     <script src="/hamburger.8e317b2c.js"></script>
+    <!-- script for slick slider -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/slider.ab09d017.js"></script>
   </body>
 </html>

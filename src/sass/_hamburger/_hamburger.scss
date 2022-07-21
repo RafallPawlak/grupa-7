@@ -1,45 +1,214 @@
-.menuItem {
-    display: block;
-    margin: 2rem 4rem;
-    font-size: 1.8rem;
-    color: white;
-    text-decoration: none;
+$toggleSize: 20px;
+$toggleMargin: 10px;
+$toggleLine: 2px;
+$toggleColor: #fff;
+
+.nav-container {
+    display: inline-block;
+    max-width: $toggleSize + $toggleMargin;
+    max-height: $toggleSize + $toggleMargin;
+    overflow: visible;
+    outline: none;
+    
+
+    //&:focus-within, &:focus {
+    &.is-active {
+
+        .nav-items {
+            visibility: visible;
+        }
+        
+        .nav-toggle {
+
+            &:before,
+            &:after {
+                box-shadow: none;
+            }
+
+            &:before {
+                transform: rotate(-45deg);
+            }
+
+            &:after {
+                transform: rotate(45deg);
+            }
+        }
+
+        .nav-items {
+            transform: translate(calc(100vw - 100%), 0);
+            visibility: visible;
+        }
+    }
+
+    .nav-toggle {
+        $offset: $toggleSize * 0.5;
+
+        position: relative;
+        width: $toggleSize;
+        height: $toggleSize;
+        margin: $toggleMargin;
+        z-index: 1000;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: -35%;
+            transform: translate(0, 0);
+            width: 100%;
+            height: $toggleLine;
+            background: $toggleColor;
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+
+        &:before {
+            box-shadow: 0 #{$offset / 1.5} 0 0 $toggleColor;
+        }
+
+        &:after {
+            box-shadow: 0 #{-$offset / 1.5} 0 0 $toggleColor;
+        }
+    }
+
+
+
+    .nav-items {
+        position: absolute;
+        visibility: hidden;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+
+        height: 502px;
+        width: 100%;
+
+        z-index: 999;
+        padding: 80px 20px 20px 10px;
+        transition: transform .3s ease;
+        transform: translate(calc(100vw), 0);
+        background: #E17992;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px 0;
+        align-content: start;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+
+        .nav-item {
+
+            padding: 15px;
+            transition: background-color .3s ease;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
 }
 
-.menuItem:hover {
-    text-decoration: underline;
+@media screen and(min-width: 480px) {
+    .nav-container .nav-items {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        min-width: 260px;
+        z-index: 999;
+        padding: 80px 20px 20px 10px;
+        transition: transform .3s ease;
+        transform: translate(calc(100vw), 0);
+        background: #E17992;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px 0;
+        align-content: start;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+
+        .nav-item {
+
+            padding: 15px;
+            transition: background-color .3s ease;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+@media screen and(min-width: 480px){
+    .nav-container .nav-toggle {
+            $offset: $toggleSize * 0.5;
+    
+            position: relative;
+            width: $toggleSize;
+            height: $toggleSize;
+            margin: $toggleMargin;
+            z-index: 1000;
+    
+            &:hover {
+                cursor: pointer;
+            }
+    
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                top: 20px;
+                left: -40%;
+                transform: translate(-33vw, 30px);
+                width: 100%;
+                height: $toggleLine;
+                background: #D41443;
+                transition: transform .3s ease, box-shadow .3s ease;
+            }
+    
+            &:before {
+                box-shadow: 0 #{$offset / 1.5} 0 0 #D41443;
+            }
+    
+            &:after {
+                box-shadow: 0 #{-$offset / 1.5} 0 0 #D41443;
+            }
+        }
+    }
+
+
+.nav-items__button{
+    width: 209px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #fff;
+    border: none;
+    margin: 0 auto;
 }
 
-.hamburger {
-    position: fixed;
-    z-index: 100;
-    top: 1rem;
-    right: 1rem;
-    padding: 4px;
-    border: black solid 1px;
-    background: white;
-    cursor: pointer;
+.nav-items__buy{
+    color: #D41443;
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        text-decoration: none;
 }
 
-.closeIcon {
-    display: none;
+.nav-item__anchor{
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        text-decoration: none;
+        color: #fff;
+        background-color: transparent;
 }
 
-.menu {
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background: black;
-    color: white;
-    list-style: none;
-    padding-top: 4rem;
-}
-
-.showMenu {
-    transform: translateY(0);
+.nav-item__anchor:hover {
+    color: #D41443;
 }
