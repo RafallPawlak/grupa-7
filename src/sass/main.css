@@ -89,7 +89,10 @@ ol {
 .products-second__heading {
   text-align: center;
   font-size: 18px;
+  font-family: "Titan One";
   color: var(--light-pink);
+  margin-bottom: 15px;
+  margin-top: 100px;
 }
 
 .products-first__heading {
@@ -98,12 +101,14 @@ ol {
   font-size: 34px;
   color: var(--dark-pink);
   margin-bottom: 31px;
+  font-family: "Titan One";
 }
 
 .product-square__item {
   width: 280px;
   height: 485px;
   border-radius: 24px;
+  margin-top: 143px;
 }
 
 .--product-pink {
@@ -135,6 +140,7 @@ ol {
   letter-spacing: 4%;
   text-align: center;
   color: var(--text-color);
+  margin-bottom: 33px;
 }
 
 .product-item__paragraf {
@@ -175,12 +181,21 @@ ol {
 }
 
 .product-margin_pic {
-  margin-top: -115px;
-  padding-top: 40px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-top: -159px;
+  padding-top: 31px;
+  width: 100%;
+  margin-bottom: 31px;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
 }
 
 .product_radius {
   border-radius: 50%;
+  margin-top: 41px;
+  margin-bottom: 41px;
+  margin-left: 120px;
+  margin-right: 120px;
 }/*# sourceMappingURL=main.css.map */
