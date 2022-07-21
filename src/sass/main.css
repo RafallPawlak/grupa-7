@@ -77,14 +77,14 @@ body {
   transform: rotate(45deg);
 }
 .nav-container.is-active .nav-items {
-  transform: translate(60vw, 0);
+  transform: translate(calc(100vw - 100%), 0);
 }
 .nav-container .nav-toggle {
   position: relative;
   width: 20px;
   height: 20px;
   margin: 10px;
-  z-index: 902;
+  z-index: 1000;
 }
 .nav-container .nav-toggle:hover {
   cursor: pointer;
@@ -97,27 +97,27 @@ body {
   transform: translate(0, 0);
   width: 100%;
   height: 2px;
-  background: var(--dark-pink);
+  background: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .nav-container .nav-toggle:before {
-  box-shadow: 0 6.6666666667px 0 0 var(--dark-pink);
+  box-shadow: 0 6.6666666667px 0 0 #fff;
 }
 .nav-container .nav-toggle:after {
-  box-shadow: 0 -6.6666666667px 0 0 var(--dark-pink);
+  box-shadow: 0 -6.6666666667px 0 0 #fff;
 }
 .nav-container .nav-items {
   position: absolute;
   overflow: hidden;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 40vw;
-  z-index: 901;
+  height: 502px;
+  width: 100%;
+  z-index: 999;
   padding: 80px 20px 20px 10px;
   transition: transform 0.3s ease;
   transform: translate(100vw, 0);
-  background: #EFEFEF;
+  background: #E17992;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 5px 0;
@@ -125,13 +125,73 @@ body {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
 .nav-container .nav-items .nav-item {
-  background: #e2e2e2;
-  padding: 10px;
+  padding: 15px;
   transition: background-color 0.3s ease;
 }
 .nav-container .nav-items .nav-item:hover {
   cursor: pointer;
-  background: #d6d6d6;
+}
+
+@media screen and (min-width: 480px) {
+  .nav-container .nav-items {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    min-width: 260px;
+    z-index: 999;
+    padding: 80px 20px 20px 10px;
+    transition: transform 0.3s ease;
+    transform: translate(100vw, 0);
+    background: #E17992;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px 0;
+    align-content: start;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  }
+  .nav-container .nav-items .nav-item {
+    padding: 15px;
+    transition: background-color 0.3s ease;
+  }
+  .nav-container .nav-items .nav-item:hover {
+    cursor: pointer;
+  }
+}
+.nav-items__button {
+  width: 209px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #fff;
+  border: none;
+  margin: 0 auto;
+}
+
+.nav-items__buy {
+  color: #D41443;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.nav-item__anchor {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+}
+
+.nav-item__anchor:hover {
+  color: #D41443;
 }
 
 .hero-header {
@@ -405,7 +465,7 @@ body {
   top: 0;
   left: 0;
   height: 502px;
-  min-width: 260px;
+  width: 100%;
   z-index: 999;
   padding: 80px 20px 20px 10px;
   transition: transform 0.3s ease;

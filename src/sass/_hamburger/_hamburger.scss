@@ -71,10 +71,11 @@ $toggleColor: #fff;
     .nav-items {
         position: absolute;
         overflow: hidden;
+
         top: 0;
         left: 0;
         height: 502px;
-        min-width: 260px;
+        width: 100%;
         z-index: 999;
         padding: 80px 20px 20px 10px;
         transition: transform .3s ease;
