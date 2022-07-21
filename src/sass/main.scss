@@ -1,17 +1,18 @@
 //Utils
-@import "./utils/variables";
+@import './utils/variables';
+@import './general/visually-hidden';
 
 //General
-@import "./general/general-styles";
+@import './general/general-styles';
 @import './base/container';
 
 //Hero
-@import "./_hamburger/hamburger";
+@import './_hamburger/hamburger';
 @import './header-hero';
 
 //Products
-@import "./products/_products-heading.scss";
-@import "./products/_products-list.scss";
+@import './products/_products-heading.scss';
+@import './products/_products-list.scss';
 
 //About
 @import './about';
@@ -22,3 +23,6 @@
 @import './footer';
 
 @import './example';
+
+//Contacts
+@import './components/contacts-list';

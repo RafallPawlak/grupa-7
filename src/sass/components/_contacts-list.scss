@@ -1,0 +1,51 @@
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  &__list {
+    width: 220px;
+    background-color: #ffff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    margin-bottom: 20px;
+  }
+  &__header-cafe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    width: 80px;
+    height: 16px;
+    background-color: #f0d1a5;
+    border-radius: 4px;
+    margin-top: 43px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+  }
+  &__header-foodtruck {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    width: 130px;
+    height: 16px;
+    background-color: #c2e297;
+    border-radius: 4px;
+    margin-top: 43px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+  }
+  &__city {
+  }
+}
