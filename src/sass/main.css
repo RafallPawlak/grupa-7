@@ -48,6 +48,16 @@ ol {
   width: 100%;
 }
 
+@media screen and (min-width: 480px) {
+  .hero-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--product-pink);
+    height: 399px;
+    width: 100%;
+  }
+}
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -60,6 +70,14 @@ ol {
   padding-top: 6px;
 }
 
+@media screen and (min-width: 480px) {
+  .header-top__logo {
+    width: 199px;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 36px;
+  }
+}
 .hero-header__topic {
   width: 218px;
   padding-left: 20px;
@@ -90,9 +108,15 @@ ol {
 
 .hero-header__buttons {
   position: relative;
-  bottom: 140px;
+  bottom: 110px;
 }
 
+@media screen and (min-width: 480px) {
+  .hero-header__buttons {
+    position: relative;
+    bottom: 65px;
+  }
+}
 .hero-button__product {
   border-radius: 20px;
   width: 61px;
@@ -140,24 +164,68 @@ ol {
   color: #fff;
 }
 
-.hero-header__icecream {
+.hero-header__icediv {
   position: absolute;
   background-image: url("/images/elipse-mobile.png");
   background-size: 344px;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 502px;
   top: 100px;
-  left: 20%;
+  left: 30vw;
 }
 
-.header-bottom__img {
+@media screen and (min-width: 480px) {
+  .hero-header__icediv {
+    position: absolute;
+    background-image: url("/images/elipse-mobile.png");
+    background-size: 344px;
+    background-repeat: no-repeat;
+    width: 100vw;
+    top: 30px;
+    left: 30vw;
+  }
+}
+.header-bottom__icecream {
   width: 171px;
   height: 410px;
   margin-left: 50px;
   margin-top: -8px;
 }
 
+@media screen and (min-width: 480px) {
+  .header-bottom__icecream {
+    width: 143px;
+    height: 336px;
+    margin-left: 70px;
+    margin-top: 32px;
+  }
+}
+.hero-header__milkdiv {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-header__milkdiv {
+    display: inline-block;
+    position: absolute;
+    z-index: 920;
+    left: 2%;
+    top: 260px;
+  }
+}
+.hero-header__tastydiv {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-header__tastydiv {
+    display: inline-block;
+    position: absolute;
+    z-index: 920;
+    right: 2%;
+    top: 265px;
+  }
+}
 .nav-container {
   display: inline-block;
   max-width: 30px;
