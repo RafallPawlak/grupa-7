@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RafallPawlak/grupa-7.git"
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
-  "author": "Grupa 7",
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://trello.com/b/FIKUtyAf/projekt-htmlcss6-grupa-7"
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
