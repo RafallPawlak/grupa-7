@@ -463,6 +463,10 @@
     position: absolute;
 }
 
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
 .hero-header__icediv {
     position: relative;
     background-image: url("/images/elipse-mobile.png");
@@ -471,7 +475,18 @@
     width: (calc(100% - 30vw));
     top: 100px;
     left: 30vw;
-}
+}}
+
+    .hero-header__icediv {
+        position: relative;
+        background-image: url("/images/elipse-mobile.png");
+        background-size: 344px;
+        background-repeat: no-repeat;
+        width: (calc(100% - 30vw));
+        top: 100px;
+        left: 30vw;
+    }
+
 
 
 @media screen and(min-width: 767px) {
