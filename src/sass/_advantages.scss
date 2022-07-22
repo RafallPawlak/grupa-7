@@ -38,8 +38,8 @@ max-width: 230px;
     .advantages__list{
         display: flex;
         gap: 30px;
-        padding-left: 36px;
-        padding-right: 76px;
+        justify-content: center;
+        margin-left: 0px;
 
         }
         .advantages__numbers{
