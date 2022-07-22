@@ -9,19 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
-    
   <link rel="stylesheet" href="/src.e31bb0bc.css"></head>
   <body>
-    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
     <header class="hero-header">
     <section class="hero-header__top header-top">
         <div class="header-top__logo"><img class="header-top__img" src="/logo 1.18ef90f6.png"></div>
-
+<ul class="hero-header__menu header-menu">
+                <li class="header-menu__item"><a class="header-menu__anchor" href="#">Home</a></li>
+                <li class="header-menu__item"><a class="header-menu__anchor" href="#">About us</a></li>
+                <li class="header-menu__item"><a class="header-menu__anchor" href="#">How it's made?</a></li>
+                <li class="header-menu__item"><a class="header-menu__anchor" href="#">Our products</a></li>
+                <li class="header-menu__item"><a class="header-menu__anchor" href="#">Contact</a></li>
+</ul>
         <!-- hamburger menu -->
         <div class="nav-container" tabindex="0">
             <div class="nav-toggle"></div>
             <ul class="nav-items">
-                <button class="nav-items__button"><a href="" class="nav-items__buy">Buy now &gt;</a></button>
+                <button class="nav-items__button"><a href="" class="nav-items__buy">Buy now <span class="nav-items__marker">&gt;</span></a></button>
                 <li class="nav-item"><a class="nav-item__anchor" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-item__anchor" href="#">About us</a></li>
                 <li class="nav-item"><a class="nav-item__anchor" href="#">How it's made?</a></li>
@@ -60,9 +64,12 @@
     <div class="hero-header__icediv"><img class="header-bottom__icecream" src="/lód-header.d07f9b1b.png"></div>
 <div class="hero-header__milkdiv"><img class="header-bottom__milk" src="/milk.0a0970c7.png"></div>
 <div class="hero-header__tastydiv"><img class="header-bottom__tasty" src="/tasty.46be1dd0.png"></div>
-
 </section>
     <!-- imgs -->
+    <div class="hero-header__span header-span">
+    <span class="header-span__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</span>
+<img class="header-span__arrow" src="/arrow.dd9de399.png">
+</div>
 </header>
     <section class="container ">
     <div>
@@ -108,11 +115,58 @@
 
 </section>
     
-    
-    
+    <section class="container">
+  <h1 hidden="">advantages</h1>
+  <div class="advantages">
+    <ul class="advantages__list">
+      <li class="advantages__item">
+        <ul>
+          <li>
+            <img src="/icon1bucket.95e071f8.png" alt="bucket" width="33" height="50">
+          </li>
+          <li class="advantages__numbers">721</li>
+          <li class="advantages__text">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </li>
+        </ul>
+      </li>
+      <li class="advantages__item">
+        <ul>
+          <li>
+            <img src="/icon1bucketapple.6234214f.png" alt="bucket with apple" width="50" height="50">
+          </li>
+          <li class="advantages__numbers">16KG</li>
+          <li class="advantages__text">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </li>
+        </ul>
+      </li>
+      <li class="advantages__item">
+        <ul>
+          <li>
+            <img src="/icon1heart.70823999.png" alt="heart" width="44" height="50">
+          </li>
+          <li class="advantages__numbers">84</li>
+          <li class="advantages__text">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="container">
+  <div class="gallery">
+    <img class="gallery__img" src="/galerymobile364x122@1x.81a467c2.jpg" srcset="/galerymobile364x122@1x.81a467c2.jpg     364w,/galerymobile728x244@2x.22ed216d.jpg     728w,/galerytablet786x264@1x.b34cdc73.jpg     786w,/galerytablet1572x528@2x.fbc90000.jpg   1572w,/galerydesktop1280x430@1x.3e01347a.jpg 1280w,/galerydesktop2560x860@2x.aad3e23d.jpg 2560w" alt="Gallery" sizes="(min-width:1200px) 1280px, (min-width:768px) 786px, (min-width:320px) 365w">
+  </div>
+</section>
+
     <section class="slick">
   <div class="container slick__container">
-    <h2 class="slick__title visually-hidden" id="customer-reviews">Customer reviews</h2>
+    <h2 class="slick__title visually-hidden" id="customer-reviews">
+      Customer reviews Rafał Pawlak
+    </h2>
     <ul class="slick__slider">
       <li class="slick__item">
         <img class="slick__image" srcset="/1customer.3efa6a07.jpg 1x,/1customer@2x.52c24149.jpg 2x" src="/1customer.3efa6a07.jpg" alt="First Customer photo">
@@ -152,7 +206,7 @@
     
 
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
-    
+
     <script src="/hamburger.8e317b2c.js"></script>
     <!-- script for slick slider -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
