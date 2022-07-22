@@ -284,6 +284,8 @@ ol {
     flex-direction: row;
     width: 100%;
     background-color: #fff5f6;
+    background-image: url(/sectionbg_contacts.b081d143.png);
+    background-position: contain;
   }
   .contacts__list {
     margin-top: -102px;
@@ -315,6 +317,29 @@ ol {
     font-size: 16px;
   }
   .contacts__description {
+    font-size: 16px;
+  }
+  .contacts__open {
+    width: 234px;
+    padding-bottom: 32px;
+    margin-left: 43px;
+    padding-top: 32px;
+  }
+  .contacts__open-days {
+    font-size: 16px;
+  }
+  .contacts__open-hours {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .contacts__adress {
+    display: flex;
+    flex-direction: column;
+    margin-top: 31px;
+    margin-left: 43px;
+    padding-bottom: 62px;
+  }
+  .contacts__adress-data {
     font-size: 16px;
   }
 }
