@@ -5,13 +5,13 @@
 @import './general/general-styles';
 @import './base/container';
 
+
 @import './_hamburger/hamburger';
 @import './header-hero';
 @import './_hamburger/hamburger';
 
 @import './products/_products-heading';
 @import './products/_products-list';
-
 
 @import './about';
 @import './advantages';
@@ -20,4 +20,10 @@
 @import './contacts';
 @import './footer';
 
+
+
+
+//Contacts
+@import './components/contacts-list';
+@import './components/contacts-buttons';
 

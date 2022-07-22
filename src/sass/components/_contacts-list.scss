@@ -1,0 +1,197 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  &__list {
+    width: 220px;
+    background-color: #ffff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    margin: 0 auto;
+  }
+  &__header-cafe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    width: 80px;
+    height: 16px;
+    background-color: #f0d1a5;
+    border-radius: 4px;
+    margin-top: 43px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+  }
+  &__header-foodtruck {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    width: 130px;
+    height: 16px;
+    background-color: #c2e297;
+    border-radius: 4px;
+    margin-top: 43px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+  }
+  &__place {
+    width: 179px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 25px;
+    margin-left: 20px;
+  }
+  &__city {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #907e82;
+    margin-right: 21px;
+  }
+  &__open {
+    width: 179px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 25px;
+    margin-left: 20px;
+    padding-top: 25px;
+  }
+  &__open-days {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: #000000;
+  }
+  &__open-hours {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: #ffa5ba;
+    margin-bottom: 10px;
+  }
+  &__adress {
+    display: block;
+    margin-top: 25px;
+    margin-left: 20px;
+    padding-bottom: 45px;
+  }
+  &__adress-data {
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #907e82;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    flex-direction: column;
+    row-gap: 104px;
+    width: 100%;
+    background-color: #fff5f6;
+
+    &__list {
+      margin-top: -84px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    flex-direction: row;
+    width: 100%;
+    background-color: #fff5f6;
+    &__list {
+      margin-top: -78px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    flex-direction: row;
+    width: 100%;
+    background-color: #fff5f6;
+    background-image: url(../images/sectionbg_contacts.png);
+    background-position: contain;
+    &__list {
+      margin-top: -102px;
+      width: 330px;
+    }
+    &__header-cafe {
+      font-size: 16px;
+      width: 73px;
+      height: 28px;
+      margin-top: 51px;
+      margin-bottom: 32px;
+      margin-left: 43px;
+    }
+    &__header-foodtruck {
+      font-size: 16px;
+      width: 138px;
+      height: 28px;
+      margin-top: 51px;
+      margin-bottom: 32px;
+      margin-left: 43px;
+    }
+    &__place {
+      width: 234px;
+      border-bottom: 1px solid #e1e1e1;
+      padding-bottom: 32px;
+      margin-left: 43px;
+    }
+    &__city {
+      font-size: 16px;
+    }
+    &__description {
+      font-size: 16px;
+    }
+    &__open {
+      width: 234px;
+      padding-bottom: 32px;
+      margin-left: 43px;
+      padding-top: 32px;
+    }
+    &__open-days {
+      font-size: 16px;
+    }
+    &__open-hours {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    &__adress {
+      display: flex;
+      flex-direction: column;
+      margin-top: 31px;
+      margin-left: 43px;
+      padding-bottom: 62px;
+    }
+    &__adress-data {
+      font-size: 16px;
+    }
+  }
+}
