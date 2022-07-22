@@ -1,0 +1,13 @@
+.contacts-section {
+  background-color: #fff5f6;
+  min-width: 320px;
+  max-width: 1600px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-section {
+    background-image: url(../images/sectionbg_contacts.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

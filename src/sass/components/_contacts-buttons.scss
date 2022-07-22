@@ -1,5 +1,4 @@
 .localisation-buttons {
-  background-color: #fff5f6;
   padding-top: 54px;
   padding-bottom: 113px;
   display: flex;
@@ -25,6 +24,9 @@
       color: #ffffff;
     }
   }
+}
+.localisation-button__icon {
+  fill: #d41342;
 }
 
 @media screen and (max-width: 767px) {

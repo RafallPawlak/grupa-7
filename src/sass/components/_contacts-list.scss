@@ -112,8 +112,6 @@
   .contacts {
     flex-direction: column;
     row-gap: 104px;
-    width: 100%;
-    background-color: #fff5f6;
 
     &__list {
       margin-top: -84px;
@@ -123,8 +121,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     flex-direction: row;
-    width: 100%;
-    background-color: #fff5f6;
+
     &__list {
       margin-top: -78px;
     }
@@ -134,10 +131,7 @@
 @media screen and (min-width: 1200px) {
   .contacts {
     flex-direction: row;
-    width: 100%;
-    background-color: #fff5f6;
-    background-image: url(../images/sectionbg_contacts.png);
-    background-position: contain;
+
     &__list {
       margin-top: -102px;
       width: 330px;
