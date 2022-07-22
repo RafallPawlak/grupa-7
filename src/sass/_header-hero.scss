@@ -320,3 +320,29 @@ font-family: 'DM Sans';
         top: 266px;
     }
 }
+
+.lorem{
+    display: none;
+}
+
+.rodzic{
+    position: absolute;
+}
+
+@media screen and(min-width: 767px){
+    .lorem{
+        display: flex;
+        text-align:left;
+        top: 310px;
+        left: 14.5vw;
+        width: 120px;
+        height: 48px;
+        position: relative;
+        font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 150%;
+            color: #fff;
+    }
+}
