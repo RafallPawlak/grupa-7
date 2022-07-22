@@ -178,6 +178,13 @@ $toggleColor: #fff;
     }
 }
 
+@media screen and(min-width: 1200px) {
+    .nav-container{
+        display: none;
+    }
+}
+
+
 
 .nav-items__button {
     width: 209px;
