@@ -111,13 +111,62 @@
 @media screen and (max-width: 767px) {
   .contacts {
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 104px;
     width: 100%;
     background-color: #fff5f6;
+
+    &__list {
+      margin-top: -84px;
+    }
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     flex-direction: row;
+    width: 100%;
+    background-color: #fff5f6;
+    &__list {
+      margin-top: -78px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    flex-direction: row;
+    width: 100%;
+    background-color: #fff5f6;
+    &__list {
+      margin-top: -102px;
+      width: 330px;
+    }
+    &__header-cafe {
+      font-size: 16px;
+      width: 73px;
+      height: 28px;
+      margin-top: 51px;
+      margin-bottom: 32px;
+      margin-left: 43px;
+    }
+    &__header-foodtruck {
+      font-size: 16px;
+      width: 138px;
+      height: 28px;
+      margin-top: 51px;
+      margin-bottom: 32px;
+      margin-left: 43px;
+    }
+    &__place {
+      width: 234px;
+      border-bottom: 1px solid #e1e1e1;
+      padding-bottom: 32px;
+      margin-left: 43px;
+    }
+    &__city {
+      font-size: 16px;
+    }
+    &__description {
+      font-size: 16px;
+    }
   }
 }
