@@ -490,12 +490,17 @@ body {
     z-index: -1;
   }
 }
-.hero-header__icediv {
+.hero-header__images {
+  width: 100%;
   position: absolute;
+}
+
+.hero-header__icediv {
+  position: relative;
   background-image: url("/images/elipse-mobile.png");
   background-size: 344px;
   background-repeat: no-repeat;
-  width: 67vw;
+  width: calc(100% - 30vw);
   top: 100px;
   left: 30vw;
 }
