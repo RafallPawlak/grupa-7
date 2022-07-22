@@ -199,5 +199,51 @@ ol {
   margin-bottom: 25px;
   margin-left: 20px;
 }
+.contacts__place {
+  width: 179px;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 25px;
+  margin-left: 20px;
+}
+.contacts__city {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.contacts__description {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #907e82;
+  margin-right: 21px;
+}
+.contacts__open {
+  width: 179px;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 25px;
+  margin-left: 20px;
+  padding-top: 25px;
+}
+.contacts__open-days {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+.contacts__open-hours {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #ffa5ba;
+  margin-bottom: 10px;
+}
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

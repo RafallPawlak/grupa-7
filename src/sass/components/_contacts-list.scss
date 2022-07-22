@@ -46,6 +46,50 @@
     margin-bottom: 25px;
     margin-left: 20px;
   }
+  &__place {
+    width: 179px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 25px;
+    margin-left: 20px;
+  }
   &__city {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #907e82;
+    margin-right: 21px;
+  }
+  &__open {
+    width: 179px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 25px;
+    margin-left: 20px;
+    padding-top: 25px;
+  }
+  &__open-days {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: #000000;
+  }
+  &__open-hours {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: #ffa5ba;
+    margin-bottom: 10px;
   }
 }
