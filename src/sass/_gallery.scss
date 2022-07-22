@@ -1,0 +1,18 @@
+.gallery{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(
+        to bottom,
+        #FFF5F6 40%,
+        #fff 40%
+        
+    );
+    
+    
+}
+
+    .gallery__img {
+        width:100% ;
+    }
+
+
