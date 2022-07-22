@@ -558,6 +558,26 @@
     }
 }
 
+.header-span__arrow {
+    display: none;
+}
+
+@media screen and(min-width: 767px) {
+    .header-span__arrow {
+        display: flex;
+        position: relative;
+        top: 315px;
+        left: 14.25vw;
+    }
+}
+
+@media screen and(min-width: 1200px) {
+    .header-span__arrow {
+        top: 525px;
+        margin-left: 60px;
+    }
+}
+
 .hero-header__tastydiv {
     display: none;
 }
@@ -634,26 +654,6 @@
         height: 78px;
         font-size: 14px;
         line-height: 140%;
-    }
-}
-
-.header-span__arrow {
-    display: none;
-}
-
-@media screen and(min-width: 767px) {
-    .header-span__arrow {
-        display: flex;
-        position: relative;
-        top: 315px;
-        left: 14.25vw;
-    }
-}
-
-@media screen and(min-width: 1200px) {
-    .header-span__arrow {
-        top: 525px;
-        margin-left: 60px;
     }
 }
 // header lorem //
