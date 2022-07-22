@@ -748,11 +748,6 @@ body {
   background-color: var(--product-green);
 }
 
-.product__item {
-  display: flex;
-  width: 100%;
-}
-
 .product-foto__heading {
   opacity: 0;
 }
@@ -799,13 +794,35 @@ body {
   display: flex;
 }
 
+@media screen and (min-width: 340px) and (max-width: 768px) {
+  .product__item {
+    display: flex;
+    width: 280px;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .product__list {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 768px;
     gap: 20px;
-    width: calc((100% - 30px) / 3);
+  }
+  .product__item {
+    width: 220px;
+  }
+  .product_radius {
+    margin: 0 auto;
+  }
+  .product-item__paragraf {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24.64px;
+    letter-spacing: 4%;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -814,7 +831,54 @@ body {
     justify-content: space-between;
     width: 100%;
     gap: 20px;
-    width: calc((100% - 30px) / 3);
+  }
+  .product__item {
+    width: 329px;
+  }
+  .product-item__heading {
+    font-family: "Titan One";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34.35px;
+    letter-spacing: 4%;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 33px;
+  }
+  .product-item__paragraf {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28.16px;
+    letter-spacing: 4%;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 40px;
+  }
+  .product-square__item {
+    width: 350px;
+    height: 525px;
+    border-radius: 24px;
+    margin-top: 143px;
+  }
+  .product-item__heading {
+    font-family: "Titan One";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34.35px;
+    letter-spacing: 4%;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 32px;
+  }
+  .product-margin_pic {
+    margin-top: -248px;
+    padding-top: 31px;
+    width: 100%;
+    margin-bottom: 31px;
+  }
+  .product_radius {
+    margin: 0 auto;
   }
 }
 .slick {
