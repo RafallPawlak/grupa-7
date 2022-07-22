@@ -149,19 +149,6 @@ ol {
   background-position: center;
 }
 
-.contacts-section {
-  background-color: #fff5f6;
-  min-width: 320px;
-  max-width: 1600px;
-}
-
-@media screen and (min-width: 1200px) {
-  .contacts-section {
-    background-image: url(/sectionbg_contacts.b081d143.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-}
 .contacts {
   display: flex;
   justify-content: space-between;
@@ -275,6 +262,8 @@ ol {
   .contacts {
     flex-direction: column;
     row-gap: 104px;
+    width: 100%;
+    background-color: #fff5f6;
   }
   .contacts__list {
     margin-top: -84px;
@@ -283,6 +272,8 @@ ol {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     flex-direction: row;
+    width: 100%;
+    background-color: #fff5f6;
   }
   .contacts__list {
     margin-top: -78px;
@@ -291,6 +282,10 @@ ol {
 @media screen and (min-width: 1200px) {
   .contacts {
     flex-direction: row;
+    width: 100%;
+    background-color: #fff5f6;
+    background-image: url(/sectionbg_contacts.b081d143.png);
+    background-position: contain;
   }
   .contacts__list {
     margin-top: -102px;
@@ -349,6 +344,7 @@ ol {
   }
 }
 .localisation-buttons {
+  background-color: #fff5f6;
   padding-top: 54px;
   padding-bottom: 113px;
   display: flex;
@@ -371,10 +367,6 @@ ol {
 .localisation-buttons__button:hover, .localisation-buttons__button:focus {
   background-color: #d41342;
   color: #ffffff;
-}
-
-.localisation-button__icon {
-  fill: #d41342;
 }
 
 @media screen and (max-width: 767px) {
