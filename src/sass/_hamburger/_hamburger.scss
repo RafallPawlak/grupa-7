@@ -9,7 +9,7 @@ $toggleColor: #fff;
     max-height: $toggleSize + $toggleMargin;
     overflow: visible;
     outline: none;
-    
+
 
     //&:focus-within, &:focus {
     &.is-active {
@@ -17,7 +17,7 @@ $toggleColor: #fff;
         .nav-items {
             visibility: visible;
         }
-        
+
         .nav-toggle {
 
             &:before,
@@ -179,7 +179,7 @@ $toggleColor: #fff;
 }
 
 @media screen and(min-width: 1200px) {
-    .nav-container{
+    .nav-container {
         display: none;
     }
 }
