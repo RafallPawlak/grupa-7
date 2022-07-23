@@ -149,6 +149,18 @@ ol {
   background-position: center;
 }
 
+.contacts-section {
+  width: 100%;
+  background-color: #fff5f6;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-section {
+    background-image: url(/sectionbg_contacts.b081d143.png);
+    background-position: contain;
+    background-repeat: no-repeat;
+  }
+}
 .contacts {
   display: flex;
   justify-content: space-between;
@@ -262,8 +274,6 @@ ol {
   .contacts {
     flex-direction: column;
     row-gap: 104px;
-    width: 100%;
-    background-color: #fff5f6;
   }
   .contacts__list {
     margin-top: -84px;
@@ -272,8 +282,6 @@ ol {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     flex-direction: row;
-    width: 100%;
-    background-color: #fff5f6;
   }
   .contacts__list {
     margin-top: -78px;
@@ -282,10 +290,6 @@ ol {
 @media screen and (min-width: 1200px) {
   .contacts {
     flex-direction: row;
-    width: 100%;
-    background-color: #fff5f6;
-    background-image: url(/sectionbg_contacts.b081d143.png);
-    background-position: contain;
   }
   .contacts__list {
     margin-top: -102px;
@@ -368,6 +372,14 @@ ol {
   background-color: #d41342;
   color: #ffffff;
 }
+.localisation-buttons__icon {
+  fill: #d41443;
+  margin-left: 13.5px;
+  transition: fill 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.localisation-buttons__icon:hover, .localisation-buttons__icon:focus {
+  fill: #ffffff;
+}
 
 @media screen and (max-width: 767px) {
   .localisation-buttons {
@@ -397,6 +409,10 @@ ol {
     width: 198px;
     margin: 0;
   }
+}
+.footer-section {
+  background-color: #fff5f6;
+  width: 100%;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
