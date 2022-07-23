@@ -33,21 +33,35 @@
 }
 
 .header-top__logo {
-    width: 199px;
-    height: 50px;
-    padding-left: 20px;
+    display: flex;
+    width: 100%;
+    height: 100%;
     padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+}
+
+.header-top__img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 @media screen and(min-width: 767px) {
     .header-top__logo {
-        width: 199px;
-        height: 50px;
-        padding-left: 20px;
+        width: 235;
+        height: 86px;
+        padding-left: 34px;
         padding-top: 36px;
         position: relative;
         z-index: 901;
     }
+
+        .header-top__img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+        }
 }
 
 @media screen and(min-width: 1200px) {
@@ -98,11 +112,13 @@
         border-radius: 22px;
         background-color: #fff;
         border: none;
-        margin: 0 auto;
+        margin-right: 34px;
+        
         position: absolute;
         top: 38px;
         right: 1%;
         z-index: 900;
+        cursor: pointer;
     }
 }
 
@@ -111,6 +127,7 @@
         width: 160px;
         height: 44px;
         right: 8%;
+        cursor: pointer;
     }
 }
 
@@ -176,6 +193,7 @@
     .header-topic__p {
         font-size: 22px;
         line-height: 30px;
+        width: 162px;
     }
 }
 
@@ -226,6 +244,8 @@
 @media screen and(min-width: 767px) {
     .hero-header__buttons {
         bottom: 65px;
+        margin-top: 40px;
+        margin-bottom: 50px;
     }
 }
 
@@ -276,7 +296,7 @@
     z-index: 903;
 }
 
-@media screen and(min-width: 1200px) {
+@media screen and(min-width: 1280px) {
     .hero-button__how {
         width: 138px;
         height: 40px;
@@ -341,8 +361,8 @@
         color: #D41443;
         position: absolute;
         z-index: 900;
-        bottom: 160px;
-        right: 25px;
+        bottom: 210px;
+        right: 50px;
         width: 35px;
     }
 }
@@ -361,13 +381,15 @@
 
 @media screen and(min-width: 767px) {
     .--cafes {
-        margin-bottom: 50px;
+        margin-bottom: 60px;
+    
     }
 }
 
 @media screen and(min-width: 1200px) {
     .--cafes {
         margin-bottom: 80px;
+        
     }
 }
 
@@ -470,9 +492,9 @@
 .hero-header__icediv {
     position: relative;
     background-image: url("/images/elipse-mobile.png");
-    background-size: 344px;
+    background-size: 360px;
     background-repeat: no-repeat;
-    width: (calc(100% - 30vw));
+    width: 100%;
     top: 100px;
     left: 30vw;
 }}
@@ -480,9 +502,9 @@
     .hero-header__icediv {
         position: relative;
         background-image: url("/images/elipse-mobile.png");
-        background-size: 344px;
+        background-size: 360px;
         background-repeat: no-repeat;
-        width: (calc(100% - 30vw));
+        width: 100%;
         top: 100px;
         left: 30vw;
     }
@@ -513,7 +535,7 @@
 .header-bottom__icecream {
     width: 171px;
     height: 410px;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: -8px;
 }
 
@@ -545,6 +567,7 @@
         position: absolute;
         z-index: 920;
         left: 2%;
+        padding-left: 20px;
         top: 260px;
     }
 }
@@ -583,6 +606,7 @@
         position: relative;
         top: 315px;
         left: 14.25vw;
+        padding-left: 40px;
     }
 }
 
@@ -603,6 +627,7 @@
         position: absolute;
         z-index: 920;
         right: 2%;
+        padding-right: 23px;
         top: 266px;
     }
 }
@@ -649,6 +674,7 @@
         text-align: left;
         top: 310px;
         left: 14.5vw;
+        margin-left: 37px;
         width: 120px;
         height: 48px;
         position: relative;

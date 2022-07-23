@@ -1,17 +1,11 @@
-$toggleSize: 40px;
-$toggleMargin: 10px;
-$toggleLine: 4px;
-$toggleColor: red;
-
 .nav-container {
     position: relative;
     display: inline-block;
-    max-width: $toggleSize + $toggleMargin;
-    max-height: $toggleSize + $toggleMargin;
+    width: 40px;
+    height: 62px;
     overflow: visible;
     outline: none;
 
-    //&:focus-within, &:focus {
     &.is-active {
         .nav-toggle {
 
@@ -22,131 +16,83 @@ $toggleColor: red;
 
             &:before {
                 transform: rotate(-45deg);
+                background: white;
             }
 
             &:after {
                 transform: rotate(45deg);
+                background: white;
             }
         }
 
         .nav-items {
             transform: translate(0, 0);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
         }
     }
 
-    .nav-toggle {
-        $offset: $toggleSize * 0.5;
+   .nav-toggle {
+       position: relative;
+       width: 20px;
+       height: 20px;
+       margin-top: 25px;
+       margin-right: 20px;
+       z-index: 1001;
 
-        position: relative;
-        width: $toggleSize;
-        height: $toggleSize;
-        margin: $toggleMargin;
-        z-index: 2;
+       &:hover {
+           cursor: pointer;
+       }
 
-        &:hover {
-            cursor: pointer;
-        }
+       &:before,
+       &:after {
+           content: "";
+           position: absolute;
+           top: 6px;
+           right: 0;
+           transform: translate(0, 0);
+           width: 100%;
+           height: 1px;
+           background: red;
+           transition: transform .3s ease, box-shadow .3s ease;
+       }
 
-        &:before,
-        &:after {
-            content: "";
-            position: absolute;
-            top: #{$offset - $toggleLine / 2};
-            left: 0;
-            transform: translate(0, 0);
-            width: 100%;
-            height: $toggleLine;
-            background: $toggleColor;
-            transition: transform .3s ease, box-shadow .3s ease;
-        }
+       &:before {
+           box-shadow: 0 6px 0 0 red;
+       }
 
-        &:before {
-            box-shadow: 0 #{$offset / 1.5} 0 0 $toggleColor;
-        }
-
-        &:after {
-            box-shadow: 0 #{-$offset / 1.5} 0 0 $toggleColor;
-        }
-    }
-
+       &:after {
+           box-shadow: 0 -6px 0 0 red;
+       }
+   }
     .nav-items {
         position: absolute;
+        display: none;
         top: 0;
-        left: 0;
-        min-width: 300px;
-        max-width: 50vw;
-        width: 100vw;
+        right: 0;
+        width: 250px;
         height: 100vh;
-        z-index: 1;
+        z-index: 1000;
         padding: 80px 20px 20px 10px;
         transition: transform .3s ease;
-        transform: translate(calc(-100% - 50px), 0);
-        background: #EFEFEF;
+        transform: translate(100% , 0);
+        background: #E18298;
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 5px 0;
         align-content: start;
-        box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+       
 
         .nav-item {
-            background: darken(#EFEFEF, 5%);
+            background: #E18298;
             padding: 10px;
             transition: background-color .3s ease;
 
             &:hover {
-                cursor: pointer;
-                background: darken(#EFEFEF, 10%);
+                background: #E18298;;
             }
         }
     }
 }
-
-@media screen and(min-width: 767px) {
-    .nav-container .nav-toggle {
-        $offset: $toggleSize * 0.5;
-
-        position: relative;
-        width: $toggleSize;
-        height: $toggleSize;
-        margin: $toggleMargin;
-        z-index: 1000;
-
-        &:hover {
-            cursor: pointer;
-        }
-
-        &:before,
-        &:after {
-            content: "";
-            position: absolute;
-            top: 20px;
-            left: -40%;
-            transform: translate(calc(-1400% + 9vw), 30px);
-            width: 100%;
-            height: $toggleLine;
-            background: #D41443;
-            transition: transform .3s ease, box-shadow .3s ease;
-        }
-
-        &:before {
-            box-shadow: 0 #{$offset / 1.5} 0 0 #D41443;
-        }
-
-        &:after {
-            box-shadow: 0 #{-$offset / 1.5} 0 0 #D41443;
-        }
-    }
-}
-
-
-// brak hamburgera //
-@media screen and(min-width: 1200px) {
-    .nav-container {
-        display: none;
-    }
-}
-// brak hamburgera //
-
 
 // list w hamburgerze //
 .nav-items__button {
@@ -160,6 +106,7 @@ $toggleColor: red;
     justify-content: center;
     align-items: center;
     align-content: center;
+    cursor: pointer;
 }
 
 .nav-items__buy {
@@ -204,3 +151,49 @@ $toggleColor: red;
 }
 
 // list w hamburgerze //
+
+@media screen and(min-width: 767px) {
+    .nav-container {
+        margin-right: 215px;
+        padding-top:  26px;
+
+        &.is-active {
+            .nav-toggle {
+            position: absolute;
+            left: 200px;
+            top: -5px;
+            }
+        }
+        }
+        .nav-items {
+            top: 0;
+            left: 20px;
+            width: 254px;
+            height: 100vh;
+            z-index: 1000;
+        }
+        .nav-toggle {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            margin-top: 50px;
+            margin-right: 20px;
+            }
+        .nav-items__button {
+            width: 155px;
+            height: 44px;
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+}
+
+
+// brak hamburgera //
+@media screen and(min-width: 1200px) {
+    .nav-container {
+        display: none;
+    }
+}
+// brak hamburgera //
+
+
