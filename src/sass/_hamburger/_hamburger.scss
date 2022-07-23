@@ -1,23 +1,18 @@
-$toggleSize: 20px;
+$toggleSize: 40px;
 $toggleMargin: 10px;
-$toggleLine: 2px;
-$toggleColor: #fff;
+$toggleLine: 4px;
+$toggleColor: red;
 
 .nav-container {
+    position: relative;
     display: inline-block;
     max-width: $toggleSize + $toggleMargin;
     max-height: $toggleSize + $toggleMargin;
     overflow: visible;
     outline: none;
 
-
     //&:focus-within, &:focus {
     &.is-active {
-
-        .nav-items {
-            visibility: visible;
-        }
-
         .nav-toggle {
 
             &:before,
@@ -35,8 +30,7 @@ $toggleColor: #fff;
         }
 
         .nav-items {
-            transform: translate(calc(100vw - 100%), 0);
-            visibility: visible;
+            transform: translate(0, 0);
         }
     }
 
@@ -47,7 +41,7 @@ $toggleColor: #fff;
         width: $toggleSize;
         height: $toggleSize;
         margin: $toggleMargin;
-        z-index: 1000;
+        z-index: 2;
 
         &:hover {
             cursor: pointer;
@@ -57,8 +51,8 @@ $toggleColor: #fff;
         &:after {
             content: "";
             position: absolute;
-            top: 20px;
-            left: -35%;
+            top: #{$offset - $toggleLine / 2};
+            left: 0;
             transform: translate(0, 0);
             width: 100%;
             height: $toggleLine;
@@ -77,50 +71,17 @@ $toggleColor: #fff;
 
     .nav-items {
         position: absolute;
-        visibility: hidden;
-        overflow: hidden;
         top: 0;
         left: 0;
-
-        height: 502px;
-        width: 60%;
-
-        z-index: 999;
-        padding: 80px 20px 20px 10px;
-        transition: transform .3s ease;
-        transform: translate(calc(100vw), 0);
-        background: #E17992;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 5px 0;
-        align-content: start;
-        box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-
-        .nav-item {
-
-            padding: 15px;
-            transition: background-color .3s ease;
-
-            &:hover {
-                cursor: pointer;
-            }
-        }
-    }
-}
-
-@media screen and(min-width: 767px) {
-    .nav-container .nav-items {
-        position: absolute;
-        overflow: hidden;
-        top: 0;
-        left: 0;
+        min-width: 300px;
+        max-width: 50vw;
+        width: 100vw;
         height: 100vh;
-        width: 254px;
-        z-index: 999;
+        z-index: 1;
         padding: 80px 20px 20px 10px;
         transition: transform .3s ease;
-        transform: translate(calc(100vw), 0);
-        background: #E17992;
+        transform: translate(calc(-100% - 50px), 0);
+        background: #EFEFEF;
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 5px 0;
@@ -128,12 +89,13 @@ $toggleColor: #fff;
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 
         .nav-item {
-
-            padding: 15px;
+            background: darken(#EFEFEF, 5%);
+            padding: 10px;
             transition: background-color .3s ease;
 
             &:hover {
                 cursor: pointer;
+                background: darken(#EFEFEF, 10%);
             }
         }
     }
