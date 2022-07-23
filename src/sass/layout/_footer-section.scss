@@ -2,3 +2,32 @@
   background-color: #fff5f6;
   width: 100%;
 }
+
+.footer-elements {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-elements {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-elements__right-side {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-elements__right-side {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+    margin-right: 50px;
+  }
+}

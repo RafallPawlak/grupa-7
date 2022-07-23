@@ -1,0 +1,33 @@
+.footer-contact {
+  display: flex;
+  justify-content: end;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  line-height: 186%;
+  letter-spacing: 0.02em;
+  color: #000000;
+
+  &__tel {
+    margin-left: 2px;
+    text-decoration: none;
+    color: #d41443;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-contact {
+    font-size: 12px;
+    margin-bottom: 46px;
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-contact {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contact {
+    font-size: 16px;
+  }
+}
