@@ -5,7 +5,6 @@
 @import './general/general-styles';
 @import './base/container';
 
-
 @import './_hamburger/hamburger';
 @import './header-hero';
 @import './_hamburger/hamburger';
@@ -20,10 +19,14 @@
 @import './contacts';
 @import './footer';
 
-
-
-
 //Contacts
+@import './layout/contacts-section';
 @import './components/contacts-list';
 @import './components/contacts-buttons';
+
+@import './layout/footer-section';
+@import './components/footer-title';
+@import './components/footer-social-links';
+@import './components/footer-contact';
+@import './components/footer-end';
 

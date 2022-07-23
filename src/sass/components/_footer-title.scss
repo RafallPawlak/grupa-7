@@ -1,0 +1,66 @@
+.footer-title__first-part {
+  font-family: 'Titan One';
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+}
+.footer-title__second-part {
+  font-family: 'Titan One';
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-title {
+    margin-left: 22px;
+
+    &__first-part {
+      width: 232px;
+      font-size: 18px;
+      line-height: 1.16;
+    }
+    &__second-part {
+      width: 200px;
+      font-size: 34px;
+      line-height: 1.14;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-title {
+    margin-left: 36px;
+    margin-bottom: 91px;
+
+    &__first-part {
+      width: 340px;
+      font-size: 26px;
+      line-height: 1.15;
+    }
+    &__second-part {
+      width: 340px;
+      font-size: 48px;
+      line-height: 1.14;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-title {
+    margin-bottom: 97px;
+    margin-left: 80px;
+
+    &__first-part {
+      width: 472px;
+      font-size: 30px;
+      line-height: 1.13;
+    }
+    &__second-part {
+      width: 474px;
+      font-size: 58px;
+      line-height: 1.13;
+    }
+  }
+}
