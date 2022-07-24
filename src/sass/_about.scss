@@ -82,6 +82,14 @@
     padding-right: 56px;
     margin-right: auto;
     cursor: pointer;
+    transition: background-color 1000ms cubic-bezier(0.165, 0.84, 0.44, 1),
+          color 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        
+          &:hover,
+          &:focus {
+            background-color: #d41342;
+            color: #ffffff;
+          }
   }
   .about__milk {
     width: 100%;
