@@ -148,6 +148,7 @@
 
 .nav-item__anchor:hover {
     color: #D41443;
+    transition: color 1s cubic-bezier(.165, .84, .44, 1);
 }
 
 // list w hamburgerze //
