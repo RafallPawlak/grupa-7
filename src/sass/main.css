@@ -299,6 +299,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .header-menu {
+    z-index: 2000;
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -343,6 +344,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header-top__buy {
+    z-index: 2001;
     width: 160px;
     height: 44px;
     right: 8%;
@@ -454,7 +456,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero-header__buttons {
-    bottom: 30px;
+    top: 55px;
     left: 95px;
   }
 }
@@ -1361,7 +1363,7 @@ body {
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: 0px;
+    top: 2000px;
     max-height: 534px;
     z-index: 10;
   }
