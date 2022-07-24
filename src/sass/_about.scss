@@ -1,8 +1,7 @@
 .about {
     background-color: #fff5f6;
-    position: absolute;
-    z-index: auto;
     width: 100%;
+    margin-top: 98px;
   }
   .about__above-title {
     font-family: "Titan One";
@@ -85,10 +84,10 @@
   }
   .about__milk {
     width: 100%;
-    position: absolute;
+    position:absolute;
     max-height: 133px;
     left: 0;
-    bottom: 61px;
+   top: 3480px;
     z-index: 10;
   }
   .about__milk--desktop {
