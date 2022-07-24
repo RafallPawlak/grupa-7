@@ -1286,6 +1286,7 @@ body {
   padding-left: 37px;
   padding-right: 56px;
   margin-right: auto;
+  cursor: pointer;
 }
 
 .about__milk {
