@@ -38,7 +38,6 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  /*overflow-x: hidden;*/
 }
 
 .container {
@@ -461,6 +460,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero-header__buttons {
+    max-width: 400px;
     top: 0px;
     left: 95px;
   }
@@ -1121,13 +1121,12 @@ body {
   display: flex;
 }
 
-@media screen and (min-width: 340px) and (max-width: 768px) {
-  .product__item {
-    display: flex;
-    width: 280px;
-    margin: 0 auto;
-  }
+.product__item {
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
 }
+
 @media screen and (min-width: 768px) {
   .product__list {
     display: flex;
