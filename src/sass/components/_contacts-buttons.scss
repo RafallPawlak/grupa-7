@@ -24,16 +24,15 @@
       background-color: #d41342;
       color: #ffffff;
     }
+    &:hover .localisation-buttons__icon,
+    &:focus .localisation-buttons__icon {
+      fill: #ffffff;
+    }
   }
   &__icon {
     fill: #d41443;
     margin-left: 13.5px;
     transition: fill 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
-
-    &:hover,
-    &:focus {
-      fill: #ffffff;
-    }
   }
 }
 
