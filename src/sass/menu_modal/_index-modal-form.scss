@@ -1,4 +1,62 @@
+.modal {
+    width: auto;
+    height: 609px;
+    background-color: #fff;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
 
+@media screen and(min-width: 320px) {
+    .modal {
+        width: auto;
+        height: 609px;
+        background-color: #fff;
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
+}
+
+@media screen and(min-width: 768px) {
+    .modal {
+        width: 450px;
+        height: 609px;
+        background-color: #fff;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
+}
+
+@media screen and(min-width: 1200px) {
+    .modal {
+        width: 528px;
+        height: 581px;
+        background-color: #fff;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 
 .index-modal-form {
     display: flex;
@@ -21,7 +79,8 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 581px;
+        height: auto;
+        margin-bottom: 20px;
     }
 }
 
@@ -30,7 +89,8 @@
         display: flex;
         flex-direction: column;
         min-width: 528px;
-        height: 581px;
+        height: auto;
+        margin-bottom: 20px;
     }
 }
 
@@ -48,7 +108,6 @@
 .index-modal-form__label {
     display: flex;
     flex-direction: column;
-    margin: -0 
 }
 
 @media screen and(min-width: 768px){
@@ -68,7 +127,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    color: var(--index-first-font-color);
+    color: #212121;
 }
 
 .index-modal-form__userarea {
@@ -118,12 +177,12 @@
 
 .index-modal-form__userarea:focus-within {
     outline: none;
-    border-color: var(--index-link-color);
+    border-color: #2196F3;
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
 .index-modal-form__user:focus-within {
-    fill: var(--index-link-color);
+    fill: #2196F3;
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
@@ -163,7 +222,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    color: var(--index-first-font-color);
+    color: #212121;
 }
 
 .index-modal-form__telarea {
@@ -212,12 +271,12 @@
 
 .index-modal-form__telarea:focus-within {
     outline: none;
-    border-color: var(--index-link-color);
+    border-color: #2196F3;
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
 .index-modal-form__tel:focus-within {
-    fill: var(--index-link-color);
+    fill: #2196F3;
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
@@ -257,7 +316,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    color: var(--index-first-font-color);
+    color: #212121;
 }
 
 .index-modal-form__emailarea {
@@ -312,12 +371,12 @@
 
 .index-modal-form__emailarea:focus-within {
     outline: none;
-    border-color: var(--index-link-color);
+    border-color: #2196F3;
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
 .index-modal-form__email:focus-within {
-    fill: var(--index-link-color);
+    fill: #2196F3;
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
@@ -352,7 +411,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    color: var(--index-first-font-color);
+    color: #212121;
 }
 
 .index-modal-form__commentplace {
@@ -418,12 +477,12 @@
 
 .index-modal-form__commentplace:focus-within {
     outline: none;
-    border-color: var(--index-link-color);
+    border-color: #2196F3;
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
 .index-modal-form__comment:focus-within {
-    fill: var(--index-link-color);
+    fill: #2196F3;
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
@@ -433,7 +492,7 @@
     flex-direction: row;
     align-items: center;
     align-content: center;
-    margin: 10px 1px 4px 14px;
+    margin: -13px 3px 4px 14px;
     position: relative;
 }
 
@@ -443,7 +502,7 @@
         flex-direction: row;
         align-items: center;
         align-content: center;
-        margin: 20px 8px 30px 14px;
+        margin: 4px 0px 30px 14px;
         position: relative;
         margin-bottom: 11px;
     }
@@ -455,7 +514,7 @@
         flex-direction: row;
         align-items: center;
         align-content: center;
-        margin: 20px 8px 30px 14px;
+        margin: 5px 0px 30px 14px;
         position: relative;
         margin-bottom: 11px;
     }
@@ -523,7 +582,7 @@
         height: 16px;
         position: absolute;
         left: 10px;
-        top: 18px;
+        top: 0px;
     }}
 
 @media screen and(min-width:768px) {
@@ -532,8 +591,8 @@
         width: 16px;
         height: 16px;
         position: absolute;
-        left: 22px;
-        top: 19px;
+        left: 36px;
+        top: 3px;
     }
 }
 
@@ -543,8 +602,8 @@
         width: 16px;
         height: 16px;
         position: absolute;
-        left: 60px;
-        top: 19px;
+        left: 72px;
+        top: 3px;
     }
 }
 
@@ -563,14 +622,14 @@
 }
 
 .index-modal-form__span {
-    color: var(--index-link-color);
+    color: #2196F3;
     text-decoration: underline;
     cursor: pointer;
 }
 
 .index-modal-form__button {
-    background-color: var(--index-link-color);
-    color: var(--index-third-font-color);
+    background-color: #2196F3;
+    color: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-family: 'Roboto';
@@ -588,8 +647,8 @@
 }
 
 @media screen and(min-width: 320px) {.index-modal-form__button {
-        background-color: var(--index-link-color);
-        color: var(--index-third-font-color);
+        background-color: #2196F3;
+        color: #ffffff;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         font-family: 'Roboto';
@@ -606,64 +665,6 @@
         cursor: pointer;
     }}
 
-.modal {
-    width: auto;
-    height: 609px;
-    background-color: #fff;
-    position: absolute;
-    top: 22%;
-    left: 50%;
-    transform: translate(-50%);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-}
-
-@media screen and(min-width: 320px) {.modal {
-        width: auto;
-        height: 609px;
-        background-color: #fff;
-        position: absolute;
-        top: 12%;
-        left: 50%;
-        transform: translate(-50%);
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-    }}
-
-@media screen and(min-width: 768px) {
-    .modal {
-        width: 450px;
-        height: 609px;
-        background-color: #fff;
-        position: absolute;
-        top: 22%;
-        left: 50%;
-        transform: translate(-50%);
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-    }
-}
-
-@media screen and(min-width: 1200px) {
-    .modal {
-        width: 528px;
-        height: 581px;
-        background-color: #fff;
-        position: absolute;
-        top: 22%;
-        left: 50%;
-        transform: translate(-50%);
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-    }
-}
-
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
 .index-modal-form__closebtn {
     position: absolute;
     cursor: pointer;
@@ -678,6 +679,7 @@
 .backdrop {
             display: inline-block;
                 position: fixed;
+                z-index: 2000;
                 top: 0;
                 left: 0;
                 width: 100%;

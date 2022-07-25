@@ -5,11 +5,11 @@
         <div class="nav-container" tabindex="0">
             <div class="nav-toggle"></div>
             <ul class="nav-items">
-                <button class="nav-items__button"><a href="" class="nav-items__buy">Buy now <span
+                <button class="nav-items__button"><a href="#" class="nav-items__buy">Buy now<span
                             class="nav-items__marker">&gt;</span></a></button>
                 <li class="nav-item"><a class="nav-item__anchor" href="#hero-header">Home</a></li>
-                <li class="nav-item"><a class="nav-item__anchor" href="#about">About us</a></li>
-                <li class="nav-item"><a class="nav-item__anchor" href="#how">How it's made?</a></li>
+                <li class="nav-item"><a class="nav-item__anchor" href="#slick">About us</a></li>
+                <li class="nav-item"><a class="nav-item__anchor" href="#about">How it's made?</a></li>
                 <li class="nav-item"><a class="nav-item__anchor" href="#products">Our products</a></li>
                 <li class="nav-item"><a class="nav-item__anchor" href="#contacts">Contact</a></li>
             </ul>
@@ -22,12 +22,12 @@
         </div>
         <ul class="hero-header__menu header-menu">
             <li class="header-menu__item"><a class="header-menu__anchor" href="#hero-header">Home</a></li>
-            <li class="header-menu__item"><a class="header-menu__anchor" href="#about">About us</a></li>
-            <li class="header-menu__item"><a class="header-menu__anchor" href="#how">How it's made?</a></li>
+            <li class="header-menu__item"><a class="header-menu__anchor" href="#slick">About us</a></li>
+            <li class="header-menu__item"><a class="header-menu__anchor" href="#about">How it's made?</a></li>
             <li class="header-menu__item"><a class="header-menu__anchor" href="#products">Our products</a></li>
             <li class="header-menu__item"><a class="header-menu__anchor" href="#contacts">Contact</a></li>
         </ul>
-        <button class="header-top__buy"><a class="header-top__buylink" href="#">Buy now &gt;</a></button>
+        <button class="header-top__buy" data-modal-open><a class="header-top__buylink" href="#" >Buy now &gt;</a></button>
         <!-- topic -->
     </section>
     <section class="hero-header__topic header-topic">
@@ -41,7 +41,7 @@
     <!-- buttons -->
     <section class="hero-header__buttons hero-button">
         <button class="hero-button__product"><a class="hero-button__link" href="#products">Products</a></button>
-        <button class="hero-button__how"> <a class="hero-button__link" href="">How it's made?</a></button>
+        <button class="hero-button__how"> <a class="hero-button__link" href="#about">How it's made?</a></button>
     </section>
     <!-- buttons -->
 
@@ -99,7 +99,7 @@
                 </svg>
             </label>
             <label for="comment" class="index-modal-form">
-                <span class="index-modal-form__comment">Komentarz</span>
+                <span class="index-modal-form__comment">Uwagi odnośnie zamówienia</span>
                 <input type="textarea" name="comment" placeholder="Wprowadź tekst"
                     class="index-modal-form__commentplace">
             </label>
