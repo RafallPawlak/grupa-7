@@ -1,6 +1,6 @@
 <section class="about" id="about">
     <div class="container">
-        <h3 class="about__above-title">tradition and love</h3>
+        <div class="about__above-title">tradition and love</div>
         <h2 class="about__title">how it&#8217;s made?</h2>
         <ul class="about__list">
             <li class="about__item">
@@ -28,7 +28,7 @@
                         </p>
                     </li class="about__item--inner">
                     <li>
-                        <button class="about__button" type="button">Read more
+                        <button class="about__button" type="button" read-more-open>Read more
                             <svg class="localisation-buttons__icon" width="10" height="9">
                                 <use href="images/icons.svg#icon-button-arrow"></use>
                             </svg>
@@ -52,3 +52,11 @@
             >
         </div>
 </section>
+<div class="backdrop is-hidden" read-more>
+    <div class="modal-read-more">
+        
+        <button class="index-modal-form__closebtn" type="button" read-more-close>
+            <div class="index-modal-form__x">X</div>
+        </button>
+    </div>
+</div>
