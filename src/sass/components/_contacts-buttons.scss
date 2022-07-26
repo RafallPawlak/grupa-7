@@ -16,6 +16,8 @@
     line-height: 21px;
     color: #d41443;
     cursor: pointer;
+    transition-property: transform;
+    transition-duration: 500ms;
     transition: background-color 1000ms cubic-bezier(0.165, 0.84, 0.44, 1),
       color 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
 
@@ -23,10 +25,12 @@
     &:focus {
       background-color: #d41342;
       color: #ffffff;
+      transform: scale(1.1);
     }
     &:hover .localisation-buttons__icon,
     &:focus .localisation-buttons__icon {
       fill: #ffffff;
+      transform: scale(1.1);
     }
   }
   &__icon {
