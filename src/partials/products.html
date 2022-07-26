@@ -7,10 +7,18 @@
     <li class="product__pink">
       <h3 class="product__heading">ICE CREAM</h3>
       <p class="product__paragraf">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et. dolore magna aliqua facilisis.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
+        dictum interdum, nisi lorem egestas vitae scel<span id="dots1">...</span
+        ><span id="more1"
+          >erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+          vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+          ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
+          turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
+          fermentum. Sed dapibus pulvinar nibh tempor porta.</span
+        >
       </p>
-      <button class="product__btn" type="button">
+
+      <button onclick="myFunction1()" id="myBtn" class="product__btn" type="button">
         <svg class="product__icon" width="25" height="12">
           <use href="images/icons.svg#icon-product-arrow"></use>
         </svg>
@@ -19,10 +27,18 @@
     <li class="product__yellow">
       <h3 class="product__heading">ICE CREAM</h3>
       <p class="product__paragraf">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et. dolore magna aliqua facilisis.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
+        dictum interdum, nisi lorem egestas vitae scel<span id="dots2">...</span
+        ><span id="more2"
+          >erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+          vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+          ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
+          turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
+          fermentum. Sed dapibus pulvinar nibh tempor porta.</span
+        >
       </p>
-      <button class="product__btn" type="button">
+
+      <button onclick="myFunction2()" id="myBtn" class="product__btn" type="button">
         <svg class="product__icon" width="25" height="12">
           <use href="images/icons.svg#icon-product-arrow"></use>
         </svg>
@@ -31,14 +47,73 @@
     <li class="product__green">
       <h3 class="product__heading">ICE CREAM</h3>
       <p class="product__paragraf">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et. dolore magna aliqua facilisis.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
+        dictum interdum, nisi lorem egestas vitae scel<span id="dots3">...</span
+        ><span id="more3"
+          >erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+          vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+          ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
+          turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
+          fermentum. Sed dapibus pulvinar nibh tempor porta.</span
+        >
       </p>
-      <button class="product__btn" type="button">
+
+      <button onclick="myFunction3()" id="myBtn" class="product__btn" type="button">
         <svg class="product__icon" width="25" height="12">
           <use href="images/icons.svg#icon-product-arrow"></use>
         </svg>
       </button>
     </li>
+    
   </ul>
+  
+
+  <script>
+    function myFunction1() {
+      var dots = document.getElementById('dots1');
+      var moreText = document.getElementById('more1');
+
+      if (dots.style.display === 'none') {
+        dots.style.display = 'inline';
+        moreText.style.display = 'none';
+      } else {
+        dots.style.display = 'none';
+        moreText.style.display = 'inline';
+      }
+    }
+  </script>
+  <script>
+    function myFunction2() {
+      var dots = document.getElementById('dots2');
+      var moreText = document.getElementById('more2');
+
+      if (dots.style.display === 'none') {
+        dots.style.display = 'inline';
+
+        moreText.style.display = 'none';
+      } else {
+        dots.style.display = 'none';
+
+        moreText.style.display = 'inline';
+      }
+    }
+  </script>
+  <script>
+    function myFunction3() {
+      var dots = document.getElementById('dots3');
+      var moreText = document.getElementById('more3');
+
+      if (dots.style.display === 'none') {
+        dots.style.display = 'inline';
+
+        moreText.style.display = 'none';
+      } else {
+        dots.style.display = 'none';
+
+        moreText.style.display = 'inline';
+      }
+    }
+  </script>
 </section>
+
+  
