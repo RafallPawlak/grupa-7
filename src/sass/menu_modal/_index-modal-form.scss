@@ -1,7 +1,7 @@
 .modal {
     width: auto;
     height: 609px;
-    background-color: var(--product-pink);
+    background-color: var(--dark-pink);
     position: absolute;
     top: 22%;
     left: 50%;
@@ -14,7 +14,7 @@
     .modal {
         width: auto;
         height: 609px;
-        background-color: var(--product-pink);
+        background-color: var(--dark-pink);
         position: absolute;
         top: 12%;
         left: 50%;
@@ -28,7 +28,7 @@
     .modal {
         width: 450px;
         height: 609px;
-        background-color: var(--product-pink);
+        background-color: var(--dark-pink);
         position: absolute;
         top: 10%;
         left: 50%;
@@ -53,6 +53,12 @@
 }
 
 .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.is-hidden2 {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
