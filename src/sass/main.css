@@ -81,6 +81,9 @@ body {
   overflow: visible;
   outline: none;
 }
+.nav-container.is-active .nav-toggle {
+  position: fixed;
+}
 .nav-container.is-active .nav-toggle:before, .nav-container.is-active .nav-toggle:after {
   box-shadow: none;
 }
@@ -95,6 +98,7 @@ body {
 .nav-container.is-active .nav-items {
   transform: translate(0, 0);
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  position: fixed;
 }
 
 .nav-toggle {

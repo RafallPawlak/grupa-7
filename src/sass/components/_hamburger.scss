@@ -21,6 +21,7 @@
 
     &.is-active {
         .nav-toggle {
+            position: fixed;
 
             &:before,
             &:after {
@@ -41,6 +42,7 @@
         .nav-items {
             transform: translate(0, 0);
             box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+            position: fixed;
         }
     }
 }
