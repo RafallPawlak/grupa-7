@@ -1,29 +1,105 @@
 .modal-read-more {
-    width: 500px;
-    height: 609px;
-    background-color: #fff;
+  width: 80%;
+  height: 75%;
+  background-color: #fff5f6;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  &__close-btn {
+    box-sizing: content-box;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
     position: absolute;
-    top: 22%;
-    left: 50%;
-    transform: translate(-50%);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    
-    &__close-btn{
-        box-sizing:content-box;
-        border-radius: 50%;
-        border: none;
-        cursor: pointer;
-        position: absolute;
-        right: 5px;
-        top: 5px;
-        width: 30px;
-        height: 30px;
-    }
-    &__svg{
-    fill: var(p);
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--product-pink);
+  }
+  &__svg {
+    fill: var(--dark-pink);
     width: 20px;
     height: 20px;
     padding: 3px;
+  }
+  &__tittle {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffa5ba;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+}
+.read-more {
+  width: 95%;
+  max-height: 80%;
+
+  background-color: #fff5f6;
+  overflow: auto;
+  position: relative;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__list {
+    display: block;
+  }
+  &__item {
+    height: 80%;
+    overflow: auto;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  &__tittle {
+    color: var(--dark-pink);
+    margin-bottom: 10px;
+    font-size: large;
+  }
+  &__text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    color: #907e82;
+    text-align: center;
+    &::first-letter {
+      font-size: 25px;
+      color: var(--dark-pink);
     }
+  }
+}
+@media screen and (min-width: 768px) {
+  .read-more {
+    top: 70px;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item {
+        
+      &:nth-child(2) p {
+        border-left: 1px solid var(--dark-pink);
+        border-right: 1px solid var(--dark-pink);
+        
+      }
+      & p{
+        padding: 0px 10px;
+      }
+    }
+  }
 }
