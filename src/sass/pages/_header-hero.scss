@@ -580,6 +580,20 @@
     height: 410px;
     margin-left: 40px;
     margin-top: -8px;
+
+    animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
+    animation-iteration-count: 2;
+    
+}
+
+@keyframes rotateY {
+    0% {
+        transform: perspective(400px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(400px) rotateY(30deg);
+    }
 }
 
 @media screen and(min-width: 767px) {
