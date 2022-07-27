@@ -285,8 +285,29 @@ body {
   display: block;
   max-width: 100%;
   max-height: 100%;
+  -webkit-animation: rotateX 1500ms infinite alternate ease-in-out 1500ms;
+          animation: rotateX 1500ms infinite alternate ease-in-out 1500ms;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
 }
 
+@-webkit-keyframes rotateX {
+  0% {
+    transform: perspective(400px) rotateX(-30deg);
+  }
+  100% {
+    transform: perspective(400px) rotateX(30deg);
+  }
+}
+
+@keyframes rotateX {
+  0% {
+    transform: perspective(400px) rotateX(-30deg);
+  }
+  100% {
+    transform: perspective(400px) rotateX(30deg);
+  }
+}
 @media screen and (min-width: 767px) {
   .header-top__logo {
     width: 235;
