@@ -165,7 +165,6 @@
   }
 }
 
-
 @media screen and (min-width: 767px) {
   .product {
     display: flex;
@@ -175,7 +174,6 @@
     &__pink {
       width: 100%;
       min-width: 220px;
-    
     }
 
     &__pink::before {
@@ -231,7 +229,7 @@
   .product {
     gap: 30px;
 
-    &__btn{
+    &__btn {
       margin-bottom: 50px;
     }
 
@@ -311,7 +309,7 @@
     }
   }
 }
-/*#more1 {
+#more1 {
   display: none;
 }
 #more2 {
@@ -319,4 +317,4 @@
 }
 #more3 {
   display: none;
-}*/
+}
