@@ -993,7 +993,7 @@ body {
   }
 }
 .index-modal-form__leavedata {
-  font-family: "Roboto";
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1019,7 +1019,7 @@ body {
 .index-modal-form__user {
   margin-left: 40px;
   margin-bottom: 4px;
-  font-family: "Roboto";
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1112,7 +1112,7 @@ body {
 .index-modal-form__tel {
   margin-left: 40px;
   margin-bottom: 4px;
-  font-family: "Roboto";
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1205,7 +1205,7 @@ body {
 .index-modal-form__email {
   margin-left: 40px;
   margin-bottom: 4px;
-  font-family: "Roboto";
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1298,7 +1298,7 @@ body {
 .index-modal-form__comment {
   margin-left: 40px;
   margin-bottom: 4px;
-  font-family: "Roboto";
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1360,7 +1360,7 @@ body {
   }
 }
 .index-modal-form__commentplace::-moz-placeholder {
-  font-family: "Roboto";
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1369,7 +1369,7 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 .index-modal-form__commentplace:-ms-input-placeholder {
-  font-family: "Roboto";
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1378,7 +1378,7 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 .index-modal-form__commentplace::placeholder {
-  font-family: "Roboto";
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1442,7 +1442,7 @@ body {
 .index-modal-form__policytext {
   margin-left: 7px;
   margin-bottom: 4.75px;
-  font-family: "Roboto";
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1467,7 +1467,7 @@ body {
   .index-modal-form__policytext {
     margin-left: 7px;
     margin-bottom: 4.75px;
-    font-family: "Roboto";
+    font-family: "DM Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1515,7 +1515,7 @@ body {
   }
 }
 .index-modal-form__checkbox:checked + .index-modal-form__policytext::before {
-  background-image: url(../images/iconcheck.svg);
+  background-image: url(../images/header/iconcheck.svg);
   content: "";
   display: flex;
   align-items: center;
@@ -2217,19 +2217,19 @@ body {
 }
 
 .advantages__icon--bucket::before {
-  content: url(/images/icon1bucket.png);
+  content: url(/images/advantages/icon1bucket.png);
   width: 33px;
   height: 50px;
 }
 
 .advantages__icon--apple::before {
-  content: url(/images/icon1bucketapple.png);
+  content: url(/images/advantages/icon1bucketapple.png);
   width: 33px;
   height: 50px;
 }
 
 .advantages__icon--heart::before {
-  content: url(/images/icon1heart.png);
+  content: url(/images/advantages/icon1heart.png);
   width: 33px;
   height: 50px;
 }
